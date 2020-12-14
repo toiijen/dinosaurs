@@ -18,7 +18,7 @@
     },
     "texture": "teleporter",
     "portalTexture": "fossiltexture",
-    "enablePortal": true,
+    "enablePortal": false,
     "biomesInDimension": [
       {
         "value": "ocean"

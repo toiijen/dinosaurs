@@ -52,6 +52,30 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "AncientTeleporterRightClickedInAir",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "AncientTeleporter",
+      "type": "tool",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -100,6 +124,7 @@
   "language_map": {
     "en_us": {
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
+      "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "block.dinosaurworld.fossil": "Fossil"
     }

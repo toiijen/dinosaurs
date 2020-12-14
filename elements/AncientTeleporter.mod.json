@@ -1,0 +1,26 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "teleporter",
+    "customModelName": "Normal",
+    "name": "Ancient Teleporter(Never use in hell)",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 0,
+    "efficiency": 4.0,
+    "attackSpeed": 10.0,
+    "enchantability": 2,
+    "damageVsEntity": 2.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "onRightClickedInAir": {
+      "name": "AncientTeleporterRightClickedInAir"
+    }
+  }
+}
