@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "dinosaurworld:block/mesozoic_portal_ew"
+    },
+    "axis=x": {
+      "model": "dinosaurworld:block/mesozoic_portal_ns"
+    }
+  }
+}

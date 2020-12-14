@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dinosaurworld:blocks/fossiltexture",
+    "up": "dinosaurworld:blocks/fossiltexture",
+    "north": "dinosaurworld:blocks/fossiltexture",
+    "east": "dinosaurworld:blocks/fossiltexture",
+    "south": "dinosaurworld:blocks/fossiltexture",
+    "west": "dinosaurworld:blocks/fossiltexture",
+    "particle": "dinosaurworld:blocks/fossiltexture"
+  }
+}

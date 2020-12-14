@@ -1,0 +1,74 @@
+{
+  "jurrasicworldintor": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dinosaurworld:sheurassicorldurn",
+        "stream": true
+      }
+    ]
+  },
+  "chasingdragons": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dinosaurworld:hasingheragons",
+        "stream": true
+      }
+    ]
+  },
+  "indominuswrecks": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dinosaurworld:ndominusrecks",
+        "stream": true
+      }
+    ]
+  },
+  "jurrasicworldsuite": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dinosaurworld:urassicorlduite",
+        "stream": true
+      }
+    ]
+  },
+  "ninetosurvivaljob": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dinosaurworld:ineourvivalob",
+        "stream": true
+      }
+    ]
+  },
+  "parkclosed": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dinosaurworld:hearkslosed",
+        "stream": true
+      }
+    ]
+  },
+  "welcometojurrasicworld": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dinosaurworld:elcomeourassicorld",
+        "stream": true
+      }
+    ]
+  },
+  "mesozoicbehindmusic": {
+    "category": "music",
+    "sounds": [
+      {
+        "name": "dinosaurworld:jurrasic_world",
+        "stream": true
+      }
+    ]
+  }
+}
