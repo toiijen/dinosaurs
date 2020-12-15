@@ -32,6 +32,7 @@ import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.dinosaurworld.procedures.ElektrickyplotEntityWalksOnTheBlockProcedure;
 import net.mcreator.dinosaurworld.procedures.ElektrickyplotEntityCollidesInTheBlockProcedure;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
@@ -136,6 +137,19 @@ public class ElektrickyplotBlock extends DinosaurworldElements.ModElement {
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
 				ElektrickyplotEntityCollidesInTheBlockProcedure.executeProcedure($_dependencies);
+			}
+		}
+
+		@Override
+		public void onEntityWalk(World world, BlockPos pos, Entity entity) {
+			super.onEntityWalk(world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				ElektrickyplotEntityWalksOnTheBlockProcedure.executeProcedure($_dependencies);
 			}
 		}
 	}

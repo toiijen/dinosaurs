@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 2,
     "customModelName": "plotroh2:default",
-    "rotationMode": 0,
+    "rotationMode": 2,
     "hasTransparency": true,
     "transparencyType": "SOLID",
     "mx": 0.0,
@@ -77,6 +77,9 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
+    "onEntityWalksOn": {
+      "name": "ElektrickyplotEntityWalksOnTheBlock"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [

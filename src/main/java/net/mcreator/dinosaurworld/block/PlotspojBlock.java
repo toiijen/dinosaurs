@@ -6,8 +6,12 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
+import net.minecraft.world.World;
 import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
+import net.minecraft.util.math.shapes.VoxelShapes;
+import net.minecraft.util.math.shapes.VoxelShape;
+import net.minecraft.util.math.shapes.ISelectionContext;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.Rotation;
 import net.minecraft.util.Mirror;
@@ -21,12 +25,14 @@ import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.DirectionalBlock;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.dinosaurworld.procedures.ElektrickyplotEntityWalksOnTheBlockProcedure;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import java.util.List;
@@ -71,6 +77,25 @@ public class PlotspojBlock extends DinosaurworldElements.ModElement {
 		}
 
 		@Override
+		public VoxelShape getShape(BlockState state, IBlockReader world, BlockPos pos, ISelectionContext context) {
+			switch ((Direction) state.get(FACING)) {
+				case SOUTH :
+				default :
+					return VoxelShapes.create(1D, 0D, 1D, 0D, 2D, 0D);
+				case NORTH :
+					return VoxelShapes.create(0D, 0D, 0D, 1D, 2D, 1D);
+				case WEST :
+					return VoxelShapes.create(0D, 0D, 1D, 1D, 2D, 0D);
+				case EAST :
+					return VoxelShapes.create(1D, 0D, 0D, 0D, 2D, 1D);
+				case UP :
+					return VoxelShapes.create(0D, 1D, 0D, 1D, 0D, 2D);
+				case DOWN :
+					return VoxelShapes.create(0D, 0D, 1D, 1D, 1D, -1D);
+			}
+		}
+
+		@Override
 		protected void fillStateContainer(StateContainer.Builder<Block, BlockState> builder) {
 			builder.add(FACING);
 		}
@@ -99,6 +124,19 @@ public class PlotspojBlock extends DinosaurworldElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
+		}
+
+		@Override
+		public void onEntityWalk(World world, BlockPos pos, Entity entity) {
+			super.onEntityWalk(world, pos, entity);
+			int x = pos.getX();
+			int y = pos.getY();
+			int z = pos.getZ();
+			{
+				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+				$_dependencies.put("entity", entity);
+				ElektrickyplotEntityWalksOnTheBlockProcedure.executeProcedure($_dependencies);
+			}
 		}
 	}
 }

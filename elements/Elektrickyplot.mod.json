@@ -20,7 +20,7 @@
     "My": 2.0,
     "Mz": 1.0,
     "faceShape": "SOLID",
-    "name": "Elektrickyplot",
+    "name": "electric fence",
     "specialInfo": [],
     "hardness": 1.0,
     "resistance": 10.0,
@@ -79,6 +79,9 @@
     "inventoryOutSlotIDs": [],
     "onEntityCollides": {
       "name": "ElektrickyplotEntityCollidesInTheBlock"
+    },
+    "onEntityWalksOn": {
+      "name": "ElektrickyplotEntityWalksOnTheBlock"
     },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],

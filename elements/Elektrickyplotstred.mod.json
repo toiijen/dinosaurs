@@ -80,6 +80,9 @@
     "onEntityCollides": {
       "name": "ElektrickyplotEntityCollidesInTheBlock"
     },
+    "onEntityWalksOn": {
+      "name": "ElektrickyplotEntityWalksOnTheBlock"
+    },
     "spawnWorldTypes": [],
     "restrictionBiomes": [],
     "blocksToReplace": [
