@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "CUSTOM:Cycadwood"
+      },
+      {
+        "value": "CUSTOM:AncientTeleporter"
+      },
+      {
+        "value": "CUSTOM:Cycadwood"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.SKULL#5"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Blocks.REDSTONE_BLOCK"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Newteleporter"
+    },
+    "name": "newteleporterrecipe",
+    "namespace": "mod"
+  }
+}

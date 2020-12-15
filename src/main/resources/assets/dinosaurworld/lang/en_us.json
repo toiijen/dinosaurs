@@ -1,7 +1,8 @@
 {
   "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-  "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
+  "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
   "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
+  "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
   "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
   "block.dinosaurworld.elektrickyplotvrch": "Elektrickyplot",
   "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
