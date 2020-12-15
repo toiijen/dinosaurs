@@ -36,37 +36,10 @@
         "value": "forest"
       },
       {
-        "value": "taiga"
-      },
-      {
         "value": "swamp"
       },
       {
         "value": "river"
-      },
-      {
-        "value": "nether"
-      },
-      {
-        "value": "the_end"
-      },
-      {
-        "value": "frozen_ocean"
-      },
-      {
-        "value": "frozen_river"
-      },
-      {
-        "value": "snowy_tundra"
-      },
-      {
-        "value": "snowy_mountains"
-      },
-      {
-        "value": "mushroom_fields"
-      },
-      {
-        "value": "mushroom_field_shore"
       },
       {
         "value": "beaches"
@@ -76,9 +49,6 @@
       },
       {
         "value": "forest_hills"
-      },
-      {
-        "value": "taiga_hills"
       },
       {
         "value": "smaller_extreme_hills"
@@ -99,28 +69,7 @@
         "value": "stone_beach"
       },
       {
-        "value": "cold_beach"
-      },
-      {
-        "value": "birch_forest"
-      },
-      {
-        "value": "birch_forest_hills"
-      },
-      {
         "value": "roofed_forest"
-      },
-      {
-        "value": "taiga_cold"
-      },
-      {
-        "value": "taiga_cold_hills"
-      },
-      {
-        "value": "redwood_taiga"
-      },
-      {
-        "value": "redwood_taiga_hills"
       },
       {
         "value": "extreme_hills_with_trees"
@@ -157,9 +106,6 @@
       },
       {
         "value": "deep_cold_ocean"
-      },
-      {
-        "value": "deep_frozen_ocean"
       },
       {
         "value": "bamboo_jungle"
