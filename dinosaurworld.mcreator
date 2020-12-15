@@ -94,14 +94,6 @@
       "ids": {}
     },
     {
-      "name": "Cyadsapling",
-      "type": "block",
-      "sortid": 6,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "Cyadleaves",
       "type": "block",
       "sortid": 6,
@@ -113,6 +105,42 @@
       "name": "Cycadbiom",
       "type": "biome",
       "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "CycadsaplingUpdateTick",
+      "type": "procedure",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "int"
+          },
+          {
+            "name": "y",
+            "type": "int"
+          },
+          {
+            "name": "z",
+            "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cycadsapling",
+      "type": "plant",
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -166,7 +194,7 @@
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-      "block.dinosaurworld.cyadsapling": "Cyadsapling",
+      "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "item.dinosaurworld.fossilitem": "Fossilitem",

@@ -34,7 +34,7 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.dinosaurworld.block.CycadwoodBlock;
-import net.mcreator.dinosaurworld.block.CyadsaplingBlock;
+import net.mcreator.dinosaurworld.block.CycadsaplingBlock;
 import net.mcreator.dinosaurworld.block.CyadleavesBlock;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
@@ -186,7 +186,7 @@ public class CycadbiomBiome extends DinosaurworldElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												CyadsaplingBlock.block.getDefaultState(), bbox);
+												CycadsaplingBlock.block.getDefaultState(), bbox);
 									}
 								}
 							}

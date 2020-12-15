@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "dinosaurworld:blocks/cyadsapling",
+    "particle": "dinosaurworld:blocks/cyadsapling"
+  }
+}

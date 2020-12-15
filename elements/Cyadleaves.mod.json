@@ -32,7 +32,7 @@
     "destroyTool": "Not specified",
     "affectedBySilkTouch": true,
     "customDrop": {
-      "value": "CUSTOM:Cyadsapling"
+      "value": "CUSTOM:Cycadsapling"
     },
     "dropAmount": 1,
     "isBeaconBase": false,
