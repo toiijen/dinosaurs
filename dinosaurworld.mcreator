@@ -160,6 +160,30 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "ElektrickyplotEntityCollidesInTheBlock",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Elektrickyplot",
+      "type": "block",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -213,6 +237,7 @@
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
+      "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "item.dinosaurworld.fossilitem": "Fossilitem",
