@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "dinosaurworld:blocks/cycadwoodbottom",
+    "up": "dinosaurworld:blocks/cyadwoodtop",
+    "north": "dinosaurworld:blocks/cycadwood",
+    "east": "dinosaurworld:blocks/cycadwood",
+    "south": "dinosaurworld:blocks/cycadwood",
+    "west": "dinosaurworld:blocks/cycadwood",
+    "particle": "dinosaurworld:blocks/cycadwoodbottom"
+  }
+}

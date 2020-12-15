@@ -135,7 +135,8 @@ public class MesozoicDimension extends DinosaurworldElements.ModElement {
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("deep_cold_ocean")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("deep_frozen_ocean")),
 				ForgeRegistries.BIOMES.getValue(new ResourceLocation("bamboo_jungle")),
-				ForgeRegistries.BIOMES.getValue(new ResourceLocation("bamboo_jungle_hills")),};
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("bamboo_jungle_hills")),
+				ForgeRegistries.BIOMES.getValue(new ResourceLocation("dinosaurworld:cycadbiom")),};
 	}
 	public static class CustomModDimension extends ModDimension {
 		@Override

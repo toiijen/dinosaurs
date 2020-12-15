@@ -166,6 +166,9 @@
       },
       {
         "value": "bamboo_jungle_hills"
+      },
+      {
+        "value": "CUSTOM:Cycadbiom"
       }
     ],
     "worldGenType": "Normal world gen",
