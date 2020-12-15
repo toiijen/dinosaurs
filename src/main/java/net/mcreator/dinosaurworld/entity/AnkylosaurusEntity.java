@@ -19,6 +19,7 @@ import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Hand;
 import net.minecraft.util.DamageSource;
+import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemGroup;
@@ -27,12 +28,14 @@ import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.passive.AnimalEntity;
+import net.minecraft.entity.ai.goal.TemptGoal;
 import net.minecraft.entity.ai.goal.SwimGoal;
 import net.minecraft.entity.ai.goal.RandomWalkingGoal;
 import net.minecraft.entity.ai.goal.PanicGoal;
 import net.minecraft.entity.ai.goal.LookRandomlyGoal;
 import net.minecraft.entity.ai.goal.LeapAtTargetGoal;
 import net.minecraft.entity.ai.goal.HurtByTargetGoal;
+import net.minecraft.entity.ai.goal.FollowMobGoal;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.Pose;
 import net.minecraft.entity.LivingEntity;
@@ -114,6 +117,9 @@ public class AnkylosaurusEntity extends DinosaurworldElements.ModElement {
 			this.goalSelector.addGoal(4, new LeapAtTargetGoal(this, (float) 0.8));
 			this.goalSelector.addGoal(5, new PanicGoal(this, 1.2));
 			this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
+			this.goalSelector.addGoal(7, new FollowMobGoal(this, (float) 1, 10, 5));
+			this.goalSelector.addGoal(8,
+					new TemptGoal(this, 1, Ingredient.fromItems(new ItemStack(CycadsaplingBlock.block, (int) (1)).getItem()), false));
 		}
 
 		@Override
@@ -213,8 +219,8 @@ public class AnkylosaurusEntity extends DinosaurworldElements.ModElement {
 				this.stepHeight = 1.0F;
 				if (entity instanceof LivingEntity) {
 					this.setAIMoveSpeed((float) this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED).getValue());
-					float forward = ((LivingEntity) entity).moveForward;
-					float strafe = 0;
+					float forward = 0;
+					float strafe = ((LivingEntity) entity).moveStrafing;
 					super.travel(new Vec3d(strafe, 0, forward));
 				}
 				this.prevLimbSwingAmount = this.limbSwingAmount;
