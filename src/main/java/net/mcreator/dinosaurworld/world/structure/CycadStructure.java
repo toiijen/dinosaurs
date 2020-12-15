@@ -56,7 +56,7 @@ public class CycadStructure extends DinosaurworldElements.ModElement {
 						int j = iworld.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
 						j -= 1;
 						Template template = ((ServerWorld) iworld.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("dinosaurworld", "cykad"));
+								.getTemplateDefaulted(new ResourceLocation("dinosaurworld", "cykas"));
 						if (template == null)
 							return false;
 						Rotation rotation = Rotation.values()[random.nextInt(3)];

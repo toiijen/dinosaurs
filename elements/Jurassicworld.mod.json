@@ -1,20 +1,28 @@
 {
   "_fv": 6,
-  "_type": "structure",
+  "_type": "dimension",
   "definition": {
-    "structure": "cykas",
-    "randomlyRotateStructure": true,
-    "surfaceDetectionType": "First motion blocking block",
-    "spawnProbability": 10000,
-    "minCountPerChunk": 1,
-    "maxCountPerChunk": 1,
-    "spawnLocation": "Ground",
-    "spawnHeightOffset": 0,
-    "spawnWorldTypes": [
-      "CUSTOM:Mesozoic"
-    ],
-    "restrictionBlocks": [],
-    "restrictionBiomes": [
+    "portalFrame": {
+      "value": "CUSTOM:Cycadwood"
+    },
+    "portalParticles": {
+      "value": "PORTAL"
+    },
+    "portalLuminance": 0.0,
+    "portalSound": {
+      "value": "block.portal.ambient"
+    },
+    "igniterName": "Jurassicworld Portal Igniter",
+    "igniterTab": {
+      "value": "TOOLS"
+    },
+    "texture": "",
+    "portalTexture": "",
+    "enablePortal": false,
+    "biomesInDimension": [
+      {
+        "value": "CUSTOM:Cycadbiom"
+      },
       {
         "value": "ocean"
       },
@@ -240,6 +248,44 @@
       {
         "value": "void"
       }
-    ]
+    ],
+    "worldGenType": "Normal world gen",
+    "mainFillerBlock": {
+      "value": "Blocks.STONE#0"
+    },
+    "secondaryFillerBlock": {
+      "value": "Blocks.SAND#0"
+    },
+    "tertiaryFillerBlock": {
+      "value": ""
+    },
+    "fluidBlock": {
+      "value": "Blocks.WATER"
+    },
+    "airColor": {
+      "value": -4138753,
+      "frgbvalue": [
+        0.753,
+        0.847,
+        1.0
+      ],
+      "fvalue": [
+        0.753,
+        0.847,
+        1.0
+      ],
+      "falpha": 1.0
+    },
+    "canRespawnHere": true,
+    "hasFog": false,
+    "hasWeather": true,
+    "isDark": false,
+    "doesWaterVaporize": false,
+    "sleepResult": "ALLOW",
+    "hasSkyLight": true,
+    "imitateOverworldBehaviour": true,
+    "dimensionMusic": {
+      "value": "CUSTOM:parkclosed"
+    }
   }
 }
