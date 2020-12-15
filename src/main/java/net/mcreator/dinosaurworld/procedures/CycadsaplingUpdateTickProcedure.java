@@ -1,16 +1,20 @@
 package net.mcreator.dinosaurworld.procedures;
 
+import net.minecraft.world.server.ServerWorld;
+import net.minecraft.world.gen.feature.template.Template;
+import net.minecraft.world.gen.feature.template.PlacementSettings;
 import net.minecraft.world.World;
+import net.minecraft.util.math.ChunkPos;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Rotation;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Mirror;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.state.IProperty;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.item.ItemEntity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.dinosaurworld.item.FossilitemItem;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import java.util.Map;
@@ -88,9 +92,12 @@ public class CycadsaplingUpdateTickProcedure extends DinosaurworldElements.ModEl
 			}
 		}.getValue(new BlockPos((int) x, (int) y, (int) z), "tagName")) == 0)) {
 			if (!world.isRemote) {
-				ItemEntity entityToSpawn = new ItemEntity(world, x, y, z, new ItemStack(FossilitemItem.block, (int) (1)));
-				entityToSpawn.setPickupDelay(10);
-				world.addEntity(entityToSpawn);
+				Template template = ((ServerWorld) world.getWorld()).getSaveHandler().getStructureTemplateManager()
+						.getTemplateDefaulted(new ResourceLocation("dinosaurworld", "cykad"));
+				if (template != null) {
+					template.addBlocksToWorldChunk(world, new BlockPos((int) x, (int) y, (int) z), new PlacementSettings().setRotation(Rotation.NONE)
+							.setMirror(Mirror.NONE).setChunk((ChunkPos) null).setIgnoreEntities(false));
+				}
 			}
 		}
 	}
