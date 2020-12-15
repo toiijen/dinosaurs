@@ -39,7 +39,7 @@
       "value": -14329397,
       "falpha": 0.0
     },
-    "treesPerChunk": 3,
+    "treesPerChunk": 0,
     "grassPerChunk": 3,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
