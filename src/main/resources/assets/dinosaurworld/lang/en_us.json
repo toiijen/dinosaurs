@@ -1,8 +1,10 @@
 {
   "biome.dinosaurworld.cycadbiom": "Cycadbiom",
   "block.dinosaurworld.cycadwood": "Cycadwood",
+  "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
   "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
   "block.dinosaurworld.cycadsapling": "Cycadsapling",
+  "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
   "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
   "block.dinosaurworld.cyadleaves": "Cyadleaves",
   "item.dinosaurworld.fossilitem": "Fossilitem",

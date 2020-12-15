@@ -19,8 +19,10 @@ import net.minecraft.world.gen.GenerationStage;
 import net.minecraft.world.biome.DefaultBiomeFeatures;
 import net.minecraft.world.biome.Biome;
 import net.minecraft.util.math.BlockPos;
+import net.minecraft.entity.EntityClassification;
 import net.minecraft.block.Blocks;
 
+import net.mcreator.dinosaurworld.entity.AnkylosaurusEntity;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import com.google.common.collect.Lists;
@@ -70,6 +72,7 @@ public class CycadbiomBiome extends DinosaurworldElements.ModElement {
 							new SphereReplaceConfig(Blocks.GRAVEL.getDefaultState(), 6, 2,
 									Lists.newArrayList(Blocks.DIRT.getDefaultState(), Blocks.GRASS_BLOCK.getDefaultState())),
 							Placement.COUNT_TOP_SOLID, new FrequencyConfig(1)));
+			this.addSpawn(EntityClassification.CREATURE, new Biome.SpawnListEntry(AnkylosaurusEntity.entity, 15, 1, 5));
 		}
 
 		@OnlyIn(Dist.CLIENT)

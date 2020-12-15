@@ -63,6 +63,10 @@
     "biomeDictionaryTypes": [
       "SAVANNA"
     ],
-    "spawnList": []
+    "spawnList": [
+      {
+        "value": "CUSTOM:Ankylosaurus"
+      }
+    ]
   }
 }
