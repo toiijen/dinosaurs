@@ -24,6 +24,7 @@ import net.minecraft.util.Rotation;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
+import net.mcreator.dinosaurworld.world.dimension.MesozoicDimension;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import java.util.Random;
@@ -43,7 +44,7 @@ public class CycadStructure extends DinosaurworldElements.ModElement {
 				int ck = pos.getZ();
 				DimensionType dimensionType = iworld.getDimension().getType();
 				boolean dimensionCriteria = false;
-				if (dimensionType == DimensionType.OVERWORLD)
+				if (dimensionType == MesozoicDimension.type)
 					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;

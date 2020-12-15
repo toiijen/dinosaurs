@@ -11,7 +11,7 @@
     "spawnLocation": "Ground",
     "spawnHeightOffset": 0,
     "spawnWorldTypes": [
-      "Surface"
+      "CUSTOM:Mesozoic"
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [
