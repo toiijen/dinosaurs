@@ -18,5 +18,6 @@ public class ElektrickyplotEntityCollidesInTheBlockProcedure extends Dinosaurwor
 		}
 		Entity entity = (Entity) dependencies.get("entity");
 		entity.attackEntityFrom(DamageSource.LIGHTNING_BOLT, (float) 1);
+		entity.setMotion(-1, -1, -1);
 	}
 }

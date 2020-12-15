@@ -39,11 +39,11 @@ import java.util.List;
 import java.util.Collections;
 
 @DinosaurworldElements.ModElement.Tag
-public class ElektrickyplotBlock extends DinosaurworldElements.ModElement {
-	@ObjectHolder("dinosaurworld:elektrickyplotvrch")
+public class ElektrickyplotstredBlock extends DinosaurworldElements.ModElement {
+	@ObjectHolder("dinosaurworld:elektrickyplotstred")
 	public static final Block block = null;
-	public ElektrickyplotBlock(DinosaurworldElements instance) {
-		super(instance, 11);
+	public ElektrickyplotstredBlock(DinosaurworldElements instance) {
+		super(instance, 12);
 	}
 
 	@Override
@@ -55,9 +55,9 @@ public class ElektrickyplotBlock extends DinosaurworldElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(15));
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("elektrickyplotvrch");
+			setRegistryName("elektrickyplotstred");
 		}
 
 		@OnlyIn(Dist.CLIENT)

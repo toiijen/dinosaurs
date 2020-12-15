@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "dinosaurworld:block/elektrickyplotstred"
+    },
+    "facing=east": {
+      "model": "dinosaurworld:block/elektrickyplotstred",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "dinosaurworld:block/elektrickyplotstred",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "dinosaurworld:block/elektrickyplotstred",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "dinosaurworld:block/elektrickyplotstred",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "dinosaurworld:block/elektrickyplotstred",
+      "x": 90
+    }
+  }
+}
