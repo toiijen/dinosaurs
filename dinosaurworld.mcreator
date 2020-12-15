@@ -261,6 +261,38 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Plotspoj",
+      "type": "block",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Plotstred",
+      "type": "block",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Plotroh",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Plotroh2",
+      "type": "block",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -310,16 +342,20 @@
     "en_us": {
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
       "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
-      "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
       "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
+      "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
       "block.dinosaurworld.elektrickyplotvrch": "Elektrickyplot",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
+      "block.dinosaurworld.plotroh2": "Plotroh2",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "block.dinosaurworld.elektrickyplotstred": "Elektrickyplotstred",
+      "block.dinosaurworld.plotstred": "Plotstred",
       "block.dinosaurworld.cycadwood": "Cycadwood",
+      "block.dinosaurworld.plotroh": "Plotroh",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
+      "block.dinosaurworld.plotspoj": "Plotspoj",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "block.dinosaurworld.fossil": "Fossil"

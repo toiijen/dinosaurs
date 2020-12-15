@@ -1,0 +1,8 @@
+{
+  "parent": "dinosaurworld:custom/plotspoj",
+  "textures": {
+    "all": "dinosaurworld:blocks/textura",
+    "particle": "dinosaurworld:blocks/textura",
+    "0": "dinosaurworld:blocks/textura"
+  }
+}
