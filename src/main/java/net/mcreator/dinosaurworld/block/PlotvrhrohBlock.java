@@ -7,7 +7,6 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.world.storage.loot.LootContext;
 import net.minecraft.world.World;
-import net.minecraft.world.IWorldReader;
 import net.minecraft.world.IBlockReader;
 import net.minecraft.util.math.shapes.VoxelShapes;
 import net.minecraft.util.math.shapes.VoxelShape;
@@ -24,7 +23,6 @@ import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItemUseContext;
 import net.minecraft.item.BlockItem;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.material.Material;
 import net.minecraft.block.SoundType;
@@ -39,11 +37,11 @@ import java.util.List;
 import java.util.Collections;
 
 @DinosaurworldElements.ModElement.Tag
-public class ElektrickyplotstredBlock extends DinosaurworldElements.ModElement {
-	@ObjectHolder("dinosaurworld:elektrickyplotstred")
+public class PlotvrhrohBlock extends DinosaurworldElements.ModElement {
+	@ObjectHolder("dinosaurworld:plotvrhroh")
 	public static final Block block = null;
-	public ElektrickyplotstredBlock(DinosaurworldElements instance) {
-		super(instance, 12);
+	public PlotvrhrohBlock(DinosaurworldElements instance) {
+		super(instance, 23);
 	}
 
 	@Override
@@ -55,9 +53,9 @@ public class ElektrickyplotstredBlock extends DinosaurworldElements.ModElement {
 	public static class CustomBlock extends Block {
 		public static final DirectionProperty FACING = DirectionalBlock.FACING;
 		public CustomBlock() {
-			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 10f).lightValue(0));
+			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 20f).lightValue(0));
 			this.setDefaultState(this.stateContainer.getBaseState().with(FACING, Direction.NORTH));
-			setRegistryName("elektrickyplotstred");
+			setRegistryName("plotvrhroh");
 		}
 
 		@OnlyIn(Dist.CLIENT)
@@ -81,17 +79,17 @@ public class ElektrickyplotstredBlock extends DinosaurworldElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.create(1D, 0D, 1D, 0D, 2D, 0D);
+					return VoxelShapes.create(1D, 0D, 1D, 0.8D, 2D, 0.8D);
 				case NORTH :
-					return VoxelShapes.create(0D, 0D, 0D, 1D, 2D, 1D);
+					return VoxelShapes.create(0D, 0D, 0D, 0.2D, 2D, 0.2D);
 				case WEST :
-					return VoxelShapes.create(0D, 0D, 1D, 1D, 2D, 0D);
+					return VoxelShapes.create(0D, 0D, 1D, 0.2D, 2D, 0.8D);
 				case EAST :
-					return VoxelShapes.create(1D, 0D, 0D, 0D, 2D, 1D);
+					return VoxelShapes.create(1D, 0D, 0D, 0.8D, 2D, 0.2D);
 				case UP :
-					return VoxelShapes.create(0D, 1D, 0D, 1D, 0D, 2D);
+					return VoxelShapes.create(0D, 1D, 0D, 0.2D, 0.8D, 2D);
 				case DOWN :
-					return VoxelShapes.create(0D, 0D, 1D, 1D, 1D, -1D);
+					return VoxelShapes.create(0D, 0D, 1D, 0.2D, 0.2D, -1D);
 			}
 		}
 
@@ -111,11 +109,6 @@ public class ElektrickyplotstredBlock extends DinosaurworldElements.ModElement {
 		@Override
 		public BlockState getStateForPlacement(BlockItemUseContext context) {
 			return this.getDefaultState().with(FACING, context.getNearestLookingDirection().getOpposite());
-		}
-
-		@Override
-		public boolean isLadder(BlockState state, IWorldReader world, BlockPos pos, LivingEntity entity) {
-			return true;
 		}
 
 		@Override

@@ -77,9 +77,6 @@
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,
     "inventoryOutSlotIDs": [],
-    "onEntityCollides": {
-      "name": "ElektrickyplotEntityCollidesInTheBlock"
-    },
     "onEntityWalksOn": {
       "name": "ElektrickyplotEntityWalksOnTheBlock"
     },

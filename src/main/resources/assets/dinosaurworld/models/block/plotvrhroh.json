@@ -1,0 +1,9 @@
+{
+  "parent": "dinosaurworld:custom/plotvrhroh",
+  "textures": {
+    "all": "dinosaurworld:blocks/plotvrhroh",
+    "particle": "dinosaurworld:blocks/plotvrhroh",
+    "0": "dinosaurworld:blocks/plotvrhroh",
+    "missing": "dinosaurworld:blocks/plotvrhroh"
+  }
+}

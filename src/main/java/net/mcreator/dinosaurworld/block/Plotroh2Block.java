@@ -79,17 +79,17 @@ public class Plotroh2Block extends DinosaurworldElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.create(1D, 0D, 1D, 0D, 2D, 0D);
+					return VoxelShapes.create(1D, 0D, 1D, 0.8D, 2D, 0.8D);
 				case NORTH :
-					return VoxelShapes.create(0D, 0D, 0D, 1D, 2D, 1D);
+					return VoxelShapes.create(0D, 0D, 0D, 0.2D, 2D, 0.2D);
 				case WEST :
-					return VoxelShapes.create(0D, 0D, 1D, 1D, 2D, 0D);
+					return VoxelShapes.create(0D, 0D, 1D, 0.2D, 2D, 0.8D);
 				case EAST :
-					return VoxelShapes.create(1D, 0D, 0D, 0D, 2D, 1D);
+					return VoxelShapes.create(1D, 0D, 0D, 0.8D, 2D, 0.2D);
 				case UP :
-					return VoxelShapes.create(0D, 1D, 0D, 1D, 0D, 2D);
+					return VoxelShapes.create(0D, 1D, 0D, 0.2D, 0.8D, 2D);
 				case DOWN :
-					return VoxelShapes.create(0D, 0D, 1D, 1D, 1D, -1D);
+					return VoxelShapes.create(0D, 0D, 1D, 0.2D, 0.2D, -1D);
 			}
 		}
 

@@ -33,7 +33,6 @@ import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
 import net.mcreator.dinosaurworld.procedures.ElektrickyplotEntityWalksOnTheBlockProcedure;
-import net.mcreator.dinosaurworld.procedures.ElektrickyplotEntityCollidesInTheBlockProcedure;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import java.util.List;
@@ -125,19 +124,6 @@ public class ElektrickyplotBlock extends DinosaurworldElements.ModElement {
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
 			return Collections.singletonList(new ItemStack(this, 1));
-		}
-
-		@Override
-		public void onEntityCollision(BlockState state, World world, BlockPos pos, Entity entity) {
-			super.onEntityCollision(state, world, pos, entity);
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			{
-				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-				$_dependencies.put("entity", entity);
-				ElektrickyplotEntityCollidesInTheBlockProcedure.executeProcedure($_dependencies);
-			}
 		}
 
 		@Override

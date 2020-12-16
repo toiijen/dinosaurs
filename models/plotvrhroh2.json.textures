@@ -1,0 +1,11 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "0": "plotvrhroh",
+        "missing": "plotvrhroh"
+      },
+      "name": "default"
+    }
+  }
+}

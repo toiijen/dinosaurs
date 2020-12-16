@@ -162,22 +162,6 @@
       "ids": {}
     },
     {
-      "name": "ElektrickyplotEntityCollidesInTheBlock",
-      "type": "procedure",
-      "sortid": 11,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
       "name": "Elektrickyplot",
       "type": "block",
       "sortid": 11,
@@ -301,6 +285,22 @@
           }
         ]
       }
+    },
+    {
+      "name": "Plotvrhroh",
+      "type": "block",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Plotvrhroh2",
+      "type": "block",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -358,6 +358,8 @@
       "block.dinosaurworld.plotroh2": "Plotroh2",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "block.dinosaurworld.elektrickyplotstred": "Elektrickyplotstred",
+      "block.dinosaurworld.plotvrhroh": "Plotvrhroh",
+      "block.dinosaurworld.plotvrhroh2": "Plotvrhroh2",
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "block.dinosaurworld.plotroh": "Plotroh",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
