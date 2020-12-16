@@ -53,7 +53,7 @@ public class ElektrickyplotEntityWalksOnTheBlockProcedure extends DinosaurworldE
 					return Direction.NORTH;
 				}
 			}
-		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.NORTH)) {
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.SOUTH)) {
 			entity.setMotion(0, 0, -1);
 		}
 		if (((new Object() {
@@ -67,7 +67,33 @@ public class ElektrickyplotEntityWalksOnTheBlockProcedure extends DinosaurworldE
 				}
 			}
 		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.NORTH)) {
-			entity.setMotion(0, 0, -1);
+			entity.setMotion(0, 0, 1);
+		}
+		if (((new Object() {
+			public Direction getDirection(BlockPos pos) {
+				try {
+					BlockState _bs = world.getBlockState(pos);
+					DirectionProperty property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
+					return _bs.get(property);
+				} catch (Exception e) {
+					return Direction.NORTH;
+				}
+			}
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.WEST)) {
+			entity.setMotion(-1, 0, 0);
+		}
+		if (((new Object() {
+			public Direction getDirection(BlockPos pos) {
+				try {
+					BlockState _bs = world.getBlockState(pos);
+					DirectionProperty property = (DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing");
+					return _bs.get(property);
+				} catch (Exception e) {
+					return Direction.NORTH;
+				}
+			}
+		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.EAST)) {
+			entity.setMotion(1, 0, 0);
 		}
 		System.out.println((new Object() {
 			public Direction getDirection(BlockPos pos) {

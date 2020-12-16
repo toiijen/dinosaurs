@@ -3,6 +3,6 @@
   "textures": {
     "all": "dinosaurworld:blocks/drat_stred",
     "particle": "dinosaurworld:blocks/drat_stred",
-    "0": "dinosaurworld:blocks/drat_stred"
+    "0": "dinosaurworld:blocks/plotstred"
   }
 }

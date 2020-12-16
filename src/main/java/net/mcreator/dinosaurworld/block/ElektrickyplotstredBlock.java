@@ -81,17 +81,17 @@ public class ElektrickyplotstredBlock extends DinosaurworldElements.ModElement {
 			switch ((Direction) state.get(FACING)) {
 				case SOUTH :
 				default :
-					return VoxelShapes.create(1D, 0D, 0.5D, 0D, 2D, 0D);
+					return VoxelShapes.create(1D, 0D, 0.5D, 0D, 1D, 0D);
 				case NORTH :
-					return VoxelShapes.create(0D, 0D, 0.5D, 1D, 2D, 1D);
+					return VoxelShapes.create(0D, 0D, 0.5D, 1D, 1D, 1D);
 				case WEST :
-					return VoxelShapes.create(0.5D, 0D, 1D, 1D, 2D, 0D);
+					return VoxelShapes.create(0.5D, 0D, 1D, 1D, 1D, 0D);
 				case EAST :
-					return VoxelShapes.create(0.5D, 0D, 0D, 0D, 2D, 1D);
+					return VoxelShapes.create(0.5D, 0D, 0D, 0D, 1D, 1D);
 				case UP :
-					return VoxelShapes.create(0D, 0.5D, 0D, 1D, 0D, 2D);
+					return VoxelShapes.create(0D, 0.5D, 0D, 1D, 0D, 1D);
 				case DOWN :
-					return VoxelShapes.create(0D, 0.5D, 1D, 1D, 1D, -1D);
+					return VoxelShapes.create(0D, 0.5D, 1D, 1D, 1D, 0D);
 			}
 		}
 

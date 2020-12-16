@@ -1,8 +1,8 @@
 {
-  "parent": "dinosaurworld:custom/plot",
+  "parent": "dinosaurworld:custom/plotvrch",
   "textures": {
     "all": "dinosaurworld:blocks/drat",
     "particle": "dinosaurworld:blocks/drat",
-    "0": "dinosaurworld:blocks/drat"
+    "0": "dinosaurworld:blocks/plotvrch"
   }
 }

@@ -3,6 +3,6 @@
   "textures": {
     "all": "dinosaurworld:blocks/dratroh",
     "particle": "dinosaurworld:blocks/dratroh",
-    "0": "dinosaurworld:blocks/dratroh"
+    "0": "dinosaurworld:blocks/plotroh"
   }
 }
