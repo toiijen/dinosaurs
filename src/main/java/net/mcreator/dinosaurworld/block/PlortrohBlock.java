@@ -31,7 +31,7 @@ import java.util.Collections;
 
 @DinosaurworldElements.ModElement.Tag
 public class PlortrohBlock extends DinosaurworldElements.ModElement {
-	@ObjectHolder("dinosaurworld:plortroh")
+	@ObjectHolder("dinosaurworld:plot_roh")
 	public static final Block block = null;
 	public PlortrohBlock(DinosaurworldElements instance) {
 		super(instance, 23);
@@ -46,7 +46,7 @@ public class PlortrohBlock extends DinosaurworldElements.ModElement {
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
 			super(Block.Properties.create(Material.IRON).sound(SoundType.METAL).hardnessAndResistance(1f, 20f).lightValue(0));
-			setRegistryName("plortroh");
+			setRegistryName("plot_roh");
 		}
 
 		@OnlyIn(Dist.CLIENT)
