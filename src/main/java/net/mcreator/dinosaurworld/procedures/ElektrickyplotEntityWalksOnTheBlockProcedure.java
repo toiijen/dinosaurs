@@ -80,7 +80,7 @@ public class ElektrickyplotEntityWalksOnTheBlockProcedure extends DinosaurworldE
 				}
 			}
 		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.WEST)) {
-			entity.setMotion(-1, 0, 0);
+			entity.setMotion(1, 0, 0);
 		}
 		if (((new Object() {
 			public Direction getDirection(BlockPos pos) {
@@ -93,7 +93,7 @@ public class ElektrickyplotEntityWalksOnTheBlockProcedure extends DinosaurworldE
 				}
 			}
 		}.getDirection(new BlockPos((int) x, (int) y, (int) z))) == Direction.EAST)) {
-			entity.setMotion(1, 0, 0);
+			entity.setMotion(-1, 0, 0);
 		}
 		System.out.println((new Object() {
 			public Direction getDirection(BlockPos pos) {
