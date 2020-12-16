@@ -294,6 +294,22 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "plot_roh"
+    },
+    {
+      "name": "Plotspojrecipe",
+      "type": "recipe",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Plotrohrecipe",
+      "type": "recipe",
+      "sortid": 25,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -343,8 +359,8 @@
     "en_us": {
       "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
+      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
       "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",

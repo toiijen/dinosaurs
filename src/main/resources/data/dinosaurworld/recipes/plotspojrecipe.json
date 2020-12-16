@@ -1,0 +1,33 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "   ",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_nugget"
+    },
+    "1": {
+      "item": "minecraft:iron_nugget"
+    },
+    "2": {
+      "item": "minecraft:iron_nugget"
+    },
+    "6": {
+      "item": "minecraft:iron_nugget"
+    },
+    "7": {
+      "item": "minecraft:iron_nugget"
+    },
+    "8": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result": {
+    "item": "dinosaurworld:plotspoj",
+    "count": 1
+  }
+}
