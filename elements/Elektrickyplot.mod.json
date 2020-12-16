@@ -18,7 +18,7 @@
     "mz": 0.0,
     "Mx": 1.0,
     "My": 2.0,
-    "Mz": 1.0,
+    "Mz": 5.0,
     "faceShape": "SOLID",
     "name": "electric fence",
     "specialInfo": [],
