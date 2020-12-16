@@ -2,8 +2,7 @@
   "mappings": {
     "default": {
       "map": {
-        "0": "plotvrhroh",
-        "missing": "plotvrhroh"
+        "0": "textura"
       },
       "name": "default"
     }

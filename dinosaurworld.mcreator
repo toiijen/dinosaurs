@@ -303,17 +303,9 @@
       }
     },
     {
-      "name": "Plotvrhroh",
+      "name": "Plortroh",
       "type": "block",
       "sortid": 23,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Plotvrhroh2",
-      "type": "block",
-      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -370,12 +362,11 @@
       "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
       "block.dinosaurworld.elektrickyplotvrch": "electric fence",
+      "block.dinosaurworld.plortroh": "Plortroh",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "block.dinosaurworld.plotroh2": "Plotroh2",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "block.dinosaurworld.elektrickyplotstred": "Elektrickyplotstred",
-      "block.dinosaurworld.plotvrhroh": "Plotvrhroh",
-      "block.dinosaurworld.plotvrhroh2": "Plotvrhroh2",
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "block.dinosaurworld.plotroh": "Plotroh",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",

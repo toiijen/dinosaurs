@@ -1,0 +1,54 @@
+{
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "block/drat",
+		"particle": "block/drat"
+	},
+	"elements": [
+		{
+			"from": [0.09543, 0, -0.07596],
+			"to": [1.09543, 16, 0.92404],
+			"rotation": {"angle": 0, "axis": "y", "origin": [2.12225, 19, 0.0429]},
+			"faces": {
+				"north": {"uv": [4.25, 4.25, 4.5, 8.25], "texture": "#0"},
+				"east": {"uv": [4, 4.25, 4.25, 8.25], "texture": "#0"},
+				"south": {"uv": [4.75, 4.25, 5, 8.25], "texture": "#0"},
+				"west": {"uv": [4.5, 4.25, 4.75, 8.25], "texture": "#0"},
+				"up": {"uv": [4.5, 4.25, 4.25, 4], "texture": "#0"},
+				"down": {"uv": [4.75, 4, 4.5, 4.25], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"translation": [11, 4, 13.5]
+		},
+		"gui": {
+			"translation": [0, -4, 0],
+			"scale": [0.5, 0.5, 0.5]
+		}
+	},
+	"groups": [
+		{
+			"name": "draty",
+			"origin": [14.75, 11, 23.5],
+			"children": []
+		},
+		{
+			"name": "draty2",
+			"origin": [14.75, 11, 23.5],
+			"children": []
+		},
+		{
+			"name": "stoziar",
+			"origin": [14, 28, 18],
+			"children": [0]
+		},
+		{
+			"name": "drziakynadraty",
+			"origin": [15.5, 11, 21],
+			"children": []
+		}
+	]
+}
