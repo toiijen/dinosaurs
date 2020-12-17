@@ -28,6 +28,5 @@
       "dinosaurworld:newteleporterrecipe",
       "dinosaurworld:shellshieldrecipe"
     ]
-  },
-  "parent": "dinosaurworld:fossilgathering"
+  }
 }
