@@ -310,6 +310,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Brachiosaurus",
+      "type": "mob",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -359,18 +367,20 @@
     "en_us": {
       "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
+      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
       "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
       "block.dinosaurworld.plot_roh": "electric fence corner",
+      "item.dinosaurworld.brachiosaurus": "Brachiosaurus Spawn Egg",
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
       "block.dinosaurworld.plotspoj": "electric wires",
+      "entity.dinosaurworld.brachiosaurus": "Brachiosaurus",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "block.dinosaurworld.fossil": "Fossil"
