@@ -466,6 +466,38 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "MobblowerMobIsHitWithTool",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Mobblower",
+      "type": "tool",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Mobblowerrecepie",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -514,12 +546,13 @@
   "language_map": {
     "en_us": {
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
+      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-      "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
       "advancements.fossilgathering.title": "Archeologist",
+      "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
+      "item.dinosaurworld.mobblower": "Mobblower",
       "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
       "block.dinosaurworld.plot_roh": "electric fence corner",
       "item.dinosaurworld.wrench": "Wrench",

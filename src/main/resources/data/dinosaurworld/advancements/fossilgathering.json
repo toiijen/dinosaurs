@@ -34,7 +34,9 @@
   "rewards": {
     "experience": 1,
     "recipes": [
-      "dinosaurworld:teleporterrecepie"
+      "dinosaurworld:teleporterrecepie",
+      "dinosaurworld:wrenchrecipe",
+      "dinosaurworld:mobblowerrecepie"
     ]
   }
 }

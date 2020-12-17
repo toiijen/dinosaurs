@@ -49,11 +49,10 @@ public class WrenchRightClickedOnBlockProcedure extends DinosaurworldElements.Mo
 			try {
 				BlockState _bs = world.getBlockState(new BlockPos((int) x, (int) y, (int) z));
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z),
-						_bs.with((DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing"), Direction.NORTH), 3);
+						_bs.with((DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing"), Direction.UP), 3);
 			} catch (Exception e) {
 			}
-		}
-		if ((Direction.NORTH == (new Object() {
+		} else if ((Direction.UP == (new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
 					BlockState _bs = world.getBlockState(pos);
@@ -67,11 +66,10 @@ public class WrenchRightClickedOnBlockProcedure extends DinosaurworldElements.Mo
 			try {
 				BlockState _bs = world.getBlockState(new BlockPos((int) x, (int) y, (int) z));
 				world.setBlockState(new BlockPos((int) x, (int) y, (int) z),
-						_bs.with((DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing"), Direction.UP), 3);
+						_bs.with((DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing"), Direction.NORTH), 3);
 			} catch (Exception e) {
 			}
-		}
-		if ((Direction.UP == (new Object() {
+		} else if ((Direction.NORTH == (new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
 					BlockState _bs = world.getBlockState(pos);
@@ -88,8 +86,7 @@ public class WrenchRightClickedOnBlockProcedure extends DinosaurworldElements.Mo
 						_bs.with((DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing"), Direction.SOUTH), 3);
 			} catch (Exception e) {
 			}
-		}
-		if ((Direction.SOUTH == (new Object() {
+		} else if ((Direction.SOUTH == (new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
 					BlockState _bs = world.getBlockState(pos);
@@ -106,8 +103,7 @@ public class WrenchRightClickedOnBlockProcedure extends DinosaurworldElements.Mo
 						_bs.with((DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing"), Direction.WEST), 3);
 			} catch (Exception e) {
 			}
-		}
-		if ((Direction.WEST == (new Object() {
+		} else if ((Direction.WEST == (new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
 					BlockState _bs = world.getBlockState(pos);
@@ -124,8 +120,7 @@ public class WrenchRightClickedOnBlockProcedure extends DinosaurworldElements.Mo
 						_bs.with((DirectionProperty) _bs.getBlock().getStateContainer().getProperty("facing"), Direction.EAST), 3);
 			} catch (Exception e) {
 			}
-		}
-		if ((Direction.EAST == (new Object() {
+		} else if ((Direction.EAST == (new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
 					BlockState _bs = world.getBlockState(pos);
