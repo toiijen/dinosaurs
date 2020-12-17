@@ -23,7 +23,7 @@
     "rewardXP": 10,
     "achievementType": "goal",
     "parent": {
-      "value": "CUSTOM:Timetraveller"
+      "value": "No parent: root"
     },
     "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"55\" y=\"87\"><field name=\"dimension\">CUSTOM:Jurassicworld</field><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
   }

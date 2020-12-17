@@ -1,5 +1,6 @@
 {
   "display": {
+    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "dinosaurworld:newteleporter"
     },
@@ -30,6 +31,5 @@
       "dinosaurworld:plotspojrecipe",
       "dinosaurworld:plotrohrecipe"
     ]
-  },
-  "parent": "dinosaurworld:timetraveller"
+  }
 }
