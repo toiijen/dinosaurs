@@ -1,11 +1,17 @@
 package net.mcreator.dinosaurworld.procedures;
 
+import net.minecraft.world.World;
+import net.minecraft.util.math.BlockPos;
+import net.minecraft.util.Direction;
+import net.minecraft.state.DirectionProperty;
+import net.minecraft.block.BlockState;
+
+import net.mcreator.dinosaurworld.DinosaurworldElements;
+
 @DinosaurworldElements.ModElement.Tag
 public class WrenchRightClickedOnBlockProcedure extends DinosaurworldElements.ModElement {
-
 	public WrenchRightClickedOnBlockProcedure(DinosaurworldElements instance) {
 		super(instance, 36);
-
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -25,12 +31,10 @@ public class WrenchRightClickedOnBlockProcedure extends DinosaurworldElements.Mo
 			System.err.println("Failed to load dependency world for procedure WrenchRightClickedOnBlock!");
 			return;
 		}
-
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
 		World world = (World) dependencies.get("world");
-
 		if ((Direction.DOWN == (new Object() {
 			public Direction getDirection(BlockPos pos) {
 				try {
@@ -134,7 +138,5 @@ public class WrenchRightClickedOnBlockProcedure extends DinosaurworldElements.Mo
 			} catch (Exception e) {
 			}
 		}
-
 	}
-
 }

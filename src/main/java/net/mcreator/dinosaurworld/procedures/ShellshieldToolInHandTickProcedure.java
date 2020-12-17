@@ -1,11 +1,18 @@
 package net.mcreator.dinosaurworld.procedures;
 
+import net.minecraft.world.GameType;
+import net.minecraft.potion.Effects;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.Entity;
+
+import net.mcreator.dinosaurworld.DinosaurworldElements;
+
 @DinosaurworldElements.ModElement.Tag
 public class ShellshieldToolInHandTickProcedure extends DinosaurworldElements.ModElement {
-
 	public ShellshieldToolInHandTickProcedure(DinosaurworldElements instance) {
 		super(instance, 26);
-
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -13,9 +20,7 @@ public class ShellshieldToolInHandTickProcedure extends DinosaurworldElements.Mo
 			System.err.println("Failed to load dependency entity for procedure ShellshieldToolInHandTick!");
 			return;
 		}
-
 		Entity entity = (Entity) dependencies.get("entity");
-
 		if ((entity.isSneaking())) {
 			if (entity instanceof PlayerEntity)
 				((PlayerEntity) entity).setGameType(GameType.CREATIVE);
@@ -43,7 +48,5 @@ public class ShellshieldToolInHandTickProcedure extends DinosaurworldElements.Mo
 				((PlayerEntity) entity).sendPlayerAbilities();
 			}
 		}
-
 	}
-
 }
