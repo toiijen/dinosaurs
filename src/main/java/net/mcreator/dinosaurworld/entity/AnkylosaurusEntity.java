@@ -52,6 +52,7 @@ import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import net.mcreator.dinosaurworld.item.ShellItem;
 import net.mcreator.dinosaurworld.block.CycadsaplingBlock;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
@@ -131,6 +132,7 @@ public class AnkylosaurusEntity extends DinosaurworldElements.ModElement {
 
 		protected void dropSpecialItems(DamageSource source, int looting, boolean recentlyHitIn) {
 			super.dropSpecialItems(source, looting, recentlyHitIn);
+			this.entityDropItem(new ItemStack(ShellItem.block, (int) (1)));
 		}
 
 		@Override

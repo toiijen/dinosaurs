@@ -310,6 +310,70 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "ShellshieldToolInHandTick",
+      "type": "procedure",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shellshield",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Shellshielddontuse",
+      "type": "tool",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "ShellshieldOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shell",
+      "type": "item",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Shellshieldrecipe",
+      "type": "recipe",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -359,18 +423,21 @@
     "en_us": {
       "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
+      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
       "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
+      "item.dinosaurworld.shellshielddontuse": "Shellshield",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
       "block.dinosaurworld.plot_roh": "electric fence corner",
       "block.dinosaurworld.cycadwood": "Cycadwood",
+      "item.dinosaurworld.shell": "Shell",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
       "block.dinosaurworld.plotspoj": "electric wires",
+      "item.dinosaurworld.shellshield": "Shellshield",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "block.dinosaurworld.fossil": "Fossil"

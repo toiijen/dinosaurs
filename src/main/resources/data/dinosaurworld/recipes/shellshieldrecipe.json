@@ -1,0 +1,42 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:iron_ingot"
+    },
+    "1": {
+      "item": "dinosaurworld:shell"
+    },
+    "2": {
+      "item": "minecraft:iron_ingot"
+    },
+    "3": {
+      "item": "dinosaurworld:shell"
+    },
+    "4": {
+      "item": "dinosaurworld:shell"
+    },
+    "5": {
+      "item": "dinosaurworld:shell"
+    },
+    "6": {
+      "item": "minecraft:iron_ingot"
+    },
+    "7": {
+      "item": "dinosaurworld:shell"
+    },
+    "8": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "dinosaurworld:shellshield",
+    "count": 1
+  }
+}

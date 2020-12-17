@@ -65,7 +65,7 @@
     "immuneToPotions": true,
     "immuneToPlayer": false,
     "mobDrop": {
-      "value": ""
+      "value": "CUSTOM:Shell"
     },
     "livingSound": {
       "value": ""

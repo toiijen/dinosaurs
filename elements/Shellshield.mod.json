@@ -1,0 +1,29 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 1,
+    "texture": "shellshield",
+    "customModelName": "shellshield:default",
+    "name": "Shellshield",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 0,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 30,
+    "damageVsEntity": 0.0,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "onItemInUseTick": {
+      "name": "ShellshieldToolInHandTick"
+    },
+    "onStoppedUsing": {
+      "name": "ShellshieldOnPlayerStoppedUsing"
+    }
+  }
+}
