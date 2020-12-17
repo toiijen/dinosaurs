@@ -25,6 +25,7 @@ import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.Mirror;
 
 import net.mcreator.dinosaurworld.world.dimension.MesozoicDimension;
+import net.mcreator.dinosaurworld.world.dimension.JurassicworldDimension;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import java.util.Random;
@@ -46,6 +47,8 @@ public class CycadStructure extends DinosaurworldElements.ModElement {
 				boolean dimensionCriteria = false;
 				if (dimensionType == MesozoicDimension.type)
 					dimensionCriteria = true;
+				if (dimensionType == JurassicworldDimension.type)
+					dimensionCriteria = true;
 				if (!dimensionCriteria)
 					return false;
 				if ((random.nextInt(1000000) + 1) <= 10000) {
@@ -56,12 +59,12 @@ public class CycadStructure extends DinosaurworldElements.ModElement {
 						int j = iworld.getHeight(Heightmap.Type.OCEAN_FLOOR_WG, i, k);
 						j -= 1;
 						Template template = ((ServerWorld) iworld.getWorld()).getSaveHandler().getStructureTemplateManager()
-								.getTemplateDefaulted(new ResourceLocation("dinosaurworld", "cykas"));
+								.getTemplateDefaulted(new ResourceLocation("dinosaurworld", "cykas2"));
 						if (template == null)
 							return false;
 						Rotation rotation = Rotation.values()[random.nextInt(3)];
 						Mirror mirror = Mirror.values()[random.nextInt(2)];
-						BlockPos spawnTo = new BlockPos(i, j + 0, k);
+						BlockPos spawnTo = new BlockPos(i, j + 1, k);
 						template.addBlocksToWorldChunk(iworld, spawnTo, new PlacementSettings().setRotation(rotation).setRandom(random)
 								.setMirror(mirror).setChunk((ChunkPos) null).setIgnoreEntities(false));
 					}

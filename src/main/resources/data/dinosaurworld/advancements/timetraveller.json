@@ -1,0 +1,32 @@
+{
+  "display": {
+    "icon": {
+      "item": "dinosaurworld:ancientteleporter"
+    },
+    "title": {
+      "translate": "advancements.timetraveller.title"
+    },
+    "description": {
+      "translate": "advancements.timetraveller.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "timetraveller": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "dinosaurworld:mesozoic"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 5,
+    "recipes": [
+      "dinosaurworld:newteleporterrecipe",
+      "dinosaurworld:shellshieldrecipe"
+    ]
+  }
+}

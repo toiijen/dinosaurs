@@ -1,0 +1,30 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:dragon_head"
+    },
+    "3": {
+      "item": "minecraft:obsidian"
+    },
+    "4": {
+      "item": "minecraft:elytra"
+    },
+    "6": {
+      "item": "minecraft:blue_ice"
+    },
+    "7": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "result": {
+    "item": "dinosaurworld:unknown_element",
+    "count": 1
+  }
+}

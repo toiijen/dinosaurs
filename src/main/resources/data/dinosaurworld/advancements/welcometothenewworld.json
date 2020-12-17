@@ -1,0 +1,35 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "dinosaurworld:newteleporter"
+    },
+    "title": {
+      "translate": "advancements.welcometothenewworld.title"
+    },
+    "description": {
+      "translate": "advancements.welcometothenewworld.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "welcometothenewworld": {
+      "trigger": "minecraft:changed_dimension",
+      "conditions": {
+        "to": "dinosaurworld:jurassicworld"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 10,
+    "recipes": [
+      "dinosaurworld:elektrickyplotrecipe",
+      "dinosaurworld:elektrickyplotstredrecipe",
+      "dinosaurworld:plotspojrecipe",
+      "dinosaurworld:plotrohrecipe"
+    ]
+  }
+}

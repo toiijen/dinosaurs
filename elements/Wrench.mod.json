@@ -1,0 +1,26 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "wrench",
+    "customModelName": "Normal",
+    "name": "Wrench",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 0,
+    "efficiency": 0.0,
+    "attackSpeed": 100.0,
+    "enchantability": 2,
+    "damageVsEntity": 0.0,
+    "usageCount": 350,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "onRightClickedOnBlock": {
+      "name": "WrenchRightClickedOnBlock"
+    }
+  }
+}

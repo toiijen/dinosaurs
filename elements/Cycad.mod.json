@@ -2,16 +2,17 @@
   "_fv": 6,
   "_type": "structure",
   "definition": {
-    "structure": "cykas",
+    "structure": "cykas2",
     "randomlyRotateStructure": true,
     "surfaceDetectionType": "First motion blocking block",
     "spawnProbability": 10000,
     "minCountPerChunk": 1,
     "maxCountPerChunk": 1,
     "spawnLocation": "Ground",
-    "spawnHeightOffset": 0,
+    "spawnHeightOffset": 1,
     "spawnWorldTypes": [
-      "CUSTOM:Mesozoic"
+      "CUSTOM:Mesozoic",
+      "CUSTOM:Jurassicworld"
     ],
     "restrictionBlocks": [],
     "restrictionBiomes": [

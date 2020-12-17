@@ -50,7 +50,7 @@ public class FossilBlock extends DinosaurworldElements.ModElement {
 	}
 	public static class CustomBlock extends Block {
 		public CustomBlock() {
-			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 5f).lightValue(0).harvestLevel(2)
+			super(Block.Properties.create(Material.ROCK).sound(SoundType.STONE).hardnessAndResistance(1f, 5f).lightValue(0).harvestLevel(1)
 					.harvestTool(ToolType.PICKAXE));
 			setRegistryName("fossil");
 		}
@@ -60,7 +60,7 @@ public class FossilBlock extends DinosaurworldElements.ModElement {
 			List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 			if (!dropsOriginal.isEmpty())
 				return dropsOriginal;
-			return Collections.singletonList(new ItemStack(FossilitemItem.block, (int) (0)));
+			return Collections.singletonList(new ItemStack(FossilitemItem.block, (int) (1)));
 		}
 	}
 	@Override
