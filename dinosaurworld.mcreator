@@ -458,6 +458,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Wrenchrecipe",
+      "type": "recipe",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -506,11 +514,11 @@
   "language_map": {
     "en_us": {
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
+      "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-      "advancements.fossilgathering.title": "Archeologist",
       "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
+      "advancements.fossilgathering.title": "Archeologist",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
       "block.dinosaurworld.plot_roh": "electric fence corner",
