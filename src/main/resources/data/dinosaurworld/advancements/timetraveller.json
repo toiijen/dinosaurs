@@ -1,6 +1,5 @@
 {
   "display": {
-    "background": "minecraft:textures/block/stone.png",
     "icon": {
       "item": "dinosaurworld:ancientteleporter"
     },
@@ -24,6 +23,11 @@
     }
   },
   "rewards": {
-    "experience": 5
-  }
+    "experience": 5,
+    "recipes": [
+      "dinosaurworld:newteleporterrecipe",
+      "dinosaurworld:shellshieldrecipe"
+    ]
+  },
+  "parent": "dinosaurworld:fossilgathering"
 }

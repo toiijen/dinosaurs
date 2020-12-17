@@ -15,6 +15,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.Entity;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.dinosaurworld.procedures.ShellshieldToolInInventoryTickProcedure;
 import net.mcreator.dinosaurworld.procedures.ShellshieldToolInHandTickProcedure;
 import net.mcreator.dinosaurworld.procedures.ShellshieldOnPlayerStoppedUsingProcedure;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
@@ -55,6 +56,11 @@ public class ShellshieldItem extends DinosaurworldElements.ModElement {
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 					$_dependencies.put("entity", entity);
 					ShellshieldToolInHandTickProcedure.executeProcedure($_dependencies);
+				}
+				{
+					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
+					$_dependencies.put("entity", entity);
+					ShellshieldToolInInventoryTickProcedure.executeProcedure($_dependencies);
 				}
 			}
 		}.setRegistryName("shellshield"));

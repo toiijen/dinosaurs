@@ -1,0 +1,30 @@
+{
+  "_fv": 6,
+  "_type": "achievement",
+  "definition": {
+    "achievementName": "Welcome to the new world, Jurrasic world",
+    "achievementDescription": "travel to jurrasic dimension",
+    "achievementIcon": {
+      "value": "CUSTOM:Newteleporter"
+    },
+    "background": "Default",
+    "disableDisplay": false,
+    "showPopup": true,
+    "announceToChat": true,
+    "hideIfNotCompleted": false,
+    "rewardLoot": [],
+    "rewardRecipes": [
+      "Elektrickyplotrecipe",
+      "Elektrickyplotstredrecipe",
+      "Plotspojrecipe",
+      "Plotrohrecipe"
+    ],
+    "rewardFunction": "No function",
+    "rewardXP": 10,
+    "achievementType": "goal",
+    "parent": {
+      "value": "CUSTOM:Timetraveller"
+    },
+    "triggerxml": "<xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"dimension_entered\" x=\"55\" y=\"87\"><field name=\"dimension\">CUSTOM:Jurassicworld</field><next><block type=\"advancement_trigger\" deletable=\"false\"/></next></block></xml>"
+  }
+}

@@ -19,6 +19,9 @@
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
+    "onItemInInventoryTick": {
+      "name": "ShellshieldToolInInventoryTick"
+    },
     "onItemInUseTick": {
       "name": "ShellshieldToolInHandTick"
     },
