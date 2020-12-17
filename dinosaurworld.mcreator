@@ -382,6 +382,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Timetraveller",
+      "type": "achievement",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -429,27 +437,29 @@
   ],
   "language_map": {
     "en_us": {
-      "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
-      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
+      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-      "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
-      "item.dinosaurworld.shellshielddontuse": "Shellshield",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
-      "item.dinosaurworld.fossilitem": "Fossilitem",
       "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
       "block.dinosaurworld.plot_roh": "electric fence corner",
+      "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
+      "block.dinosaurworld.plotspoj": "electric wires",
+      "block.dinosaurworld.cyadleaves": "Cyadleaves",
+      "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
+      "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
+      "advancements.timetraveller.title": "Timetraveller",
+      "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
+      "item.dinosaurworld.shellshielddontuse": "Shellshield",
+      "advancements.timetraveller.descr": "travel to mesozoic",
+      "item.dinosaurworld.fossilitem": "Fossilitem",
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "advancements.enemyofshelledcreatures.title": "Enemy of shelled creatures",
       "item.dinosaurworld.shell": "Shell",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
-      "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
-      "block.dinosaurworld.plotspoj": "electric wires",
       "item.dinosaurworld.shellshield": "Shellshield",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
-      "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "block.dinosaurworld.fossil": "Fossil"
     }
   },
