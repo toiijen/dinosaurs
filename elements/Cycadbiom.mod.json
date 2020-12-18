@@ -36,7 +36,7 @@
       "falpha": 0.0
     },
     "waterColor": {
-      "value": -14329397,
+      "value": -7700893,
       "falpha": 0.0
     },
     "treesPerChunk": 0,
@@ -54,7 +54,7 @@
     "baseHeight": 0.1,
     "heightVariation": 0.2,
     "spawnBiome": false,
-    "biomeWeight": 100,
+    "biomeWeight": 1000,
     "biomeType": "DESERT",
     "biomeCategory": "SAVANNA",
     "parent": {

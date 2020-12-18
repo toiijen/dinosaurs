@@ -1,0 +1,29 @@
+{
+  "_fv": 6,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "tpstaff",
+    "customModelName": "Normal",
+    "name": "Teleportation staff",
+    "creativeTab": {
+      "value": "TOOLS"
+    },
+    "toolType": "Special",
+    "harvestLevel": 0,
+    "efficiency": 4.0,
+    "attackSpeed": 1.0,
+    "enchantability": 2,
+    "damageVsEntity": 4.0,
+    "usageCount": 100,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "onRightClickedInAir": {
+      "name": "TpstaffRightClickedInAir"
+    },
+    "onRightClickedOnBlock": {
+      "name": "TpstaffRightClickedInAir"
+    }
+  }
+}

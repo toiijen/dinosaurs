@@ -6,8 +6,8 @@
     "mobLabel": "",
     "mobModelTexture": ".png",
     "mobModelName": "Modelbrachiosaurus",
-    "modelWidth": 3.4,
-    "modelHeight": 2.1,
+    "modelWidth": 10.0,
+    "modelHeight": 10.0,
     "modelShadowSize": 1.6,
     "armorBaseValue": 0.0,
     "hasSpawnEgg": true,
@@ -48,7 +48,7 @@
     "attackStrength": 3,
     "movementSpeed": 0.3,
     "trackingRange": 64,
-    "health": 10,
+    "health": 50,
     "xpAmount": 5,
     "waterMob": false,
     "flyingMob": false,
@@ -57,18 +57,18 @@
     "canControlForward": false,
     "canControlStrafe": false,
     "immuneToFire": false,
-    "immuneToArrows": false,
+    "immuneToArrows": true,
     "immuneToFallDamage": false,
     "immuneToCactus": false,
     "immuneToDrowning": false,
     "immuneToLightning": false,
     "immuneToPotions": false,
-    "immuneToPlayer": false,
+    "immuneToPlayer": true,
     "mobDrop": {
       "value": ""
     },
     "livingSound": {
-      "value": "CUSTOM:chasingdragons"
+      "value": ""
     },
     "hurtSound": {
       "value": "entity.generic.hurt"
