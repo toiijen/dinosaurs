@@ -11,7 +11,7 @@
       "item": "minecraft:nether_star"
     },
     "1": {
-      "item": "dinosaurworld:arrowstaff"
+      "item": "dinosaurworld:unknown_element"
     },
     "2": {
       "item": "minecraft:nether_star"
@@ -24,7 +24,7 @@
     }
   },
   "result": {
-    "item": "dinosaurworld:creativearowstaff",
+    "item": "dinosaurworld:aroowstaff",
     "count": 1
   }
 }

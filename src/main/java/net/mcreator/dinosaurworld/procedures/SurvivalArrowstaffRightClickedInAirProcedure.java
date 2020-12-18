@@ -1,21 +1,11 @@
 package net.mcreator.dinosaurworld.procedures;
 
-import net.minecraft.world.World;
-import net.minecraft.item.Items;
-import net.minecraft.item.ItemStack;
-import net.minecraft.entity.projectile.ArrowEntity;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.Entity;
-
-import net.mcreator.dinosaurworld.DinosaurworldElements;
-
-import java.util.Random;
-
 @DinosaurworldElements.ModElement.Tag
 public class SurvivalArrowstaffRightClickedInAirProcedure extends DinosaurworldElements.ModElement {
+
 	public SurvivalArrowstaffRightClickedInAirProcedure(DinosaurworldElements instance) {
 		super(instance, 47);
+
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
@@ -31,9 +21,11 @@ public class SurvivalArrowstaffRightClickedInAirProcedure extends DinosaurworldE
 			System.err.println("Failed to load dependency world for procedure SurvivalArrowstaffRightClickedInAir!");
 			return;
 		}
+
 		Entity entity = (Entity) dependencies.get("entity");
 		ItemStack itemstack = (ItemStack) dependencies.get("itemstack");
 		World world = (World) dependencies.get("world");
+
 		if (((entity instanceof PlayerEntity) ? ((PlayerEntity) entity).inventory.hasItemStack(new ItemStack(Items.ARROW, (int) (1))) : false)) {
 			if (!world.isRemote && entity instanceof LivingEntity) {
 				ArrowEntity entityToSpawn = new ArrowEntity(world, (LivingEntity) entity);
@@ -49,5 +41,7 @@ public class SurvivalArrowstaffRightClickedInAirProcedure extends DinosaurworldE
 				itemstack.setDamage(0);
 			}
 		}
+
 	}
+
 }

@@ -537,8 +537,7 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "ids": {},
-      "registry_name": "creativearowstaff"
+      "ids": {}
     },
     {
       "name": "TpstaffRightClickedInAir",
@@ -577,9 +576,25 @@
       }
     },
     {
+      "name": "Creativarrowstaff",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
       "name": "Arrowstaff",
       "type": "tool",
       "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Arrowstaffadvanc",
+      "type": "achievement",
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -612,22 +627,6 @@
       "name": "Arrowstaffrecepie",
       "type": "recipe",
       "sortid": 48,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Creativarrowstaff",
-      "type": "recipe",
-      "sortid": 49,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Arrowstaffadvanc",
-      "type": "achievement",
-      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -684,10 +683,7 @@
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
       "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
       "advancements.fossilgathering.title": "Archeologist",
-      "item.dinosaurworld.arrowstaff": "Automated crossbow",
-      "advancements.arrowstaffadvanc.descr": "use automated crossbow",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
-      "item.dinosaurworld.anky": "Anky",
       "item.dinosaurworld.mobblower": "Mobblower",
       "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
       "block.dinosaurworld.plot_roh": "electric fence corner",
@@ -705,7 +701,6 @@
       "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
       "item.dinosaurworld.shellshielddontuse": "Shellshield",
       "advancements.timetraveller.descr": "travel to mesozoic",
-      "item.dinosaurworld.tpstaff": "Teleportation staff",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "item.dinosaurworld.brachiosaurus": "Brachiosaurus Spawn Egg",
       "block.dinosaurworld.cycadwood": "Cycadwood",
@@ -715,7 +710,6 @@
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "entity.dinosaurworld.brachiosaurus": "Brachiosaurus",
       "item.dinosaurworld.shellshield": "Shellshield",
-      "advancements.arrowstaffadvanc.title": "Not gonna use that slow crossbow again",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "block.dinosaurworld.fossil": "Fossil"
     }

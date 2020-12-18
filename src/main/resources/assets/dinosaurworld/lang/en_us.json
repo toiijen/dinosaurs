@@ -1,14 +1,11 @@
 {
   "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-  "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
   "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
+  "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
   "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-  "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
   "advancements.fossilgathering.title": "Archeologist",
-  "item.dinosaurworld.arrowstaff": "Automated crossbow",
-  "advancements.arrowstaffadvanc.descr": "use automated crossbow",
+  "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
   "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
-  "item.dinosaurworld.anky": "Anky",
   "item.dinosaurworld.mobblower": "Mobblower",
   "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
   "block.dinosaurworld.plot_roh": "electric fence corner",
@@ -26,7 +23,6 @@
   "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
   "item.dinosaurworld.shellshielddontuse": "Shellshield",
   "advancements.timetraveller.descr": "travel to mesozoic",
-  "item.dinosaurworld.tpstaff": "Teleportation staff",
   "item.dinosaurworld.fossilitem": "Fossilitem",
   "item.dinosaurworld.brachiosaurus": "Brachiosaurus Spawn Egg",
   "block.dinosaurworld.cycadwood": "Cycadwood",
@@ -36,7 +32,6 @@
   "block.dinosaurworld.cycadsapling": "Cycadsapling",
   "entity.dinosaurworld.brachiosaurus": "Brachiosaurus",
   "item.dinosaurworld.shellshield": "Shellshield",
-  "advancements.arrowstaffadvanc.title": "Not gonna use that slow crossbow again",
   "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
   "block.dinosaurworld.fossil": "Fossil"
 }
