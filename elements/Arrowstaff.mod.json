@@ -3,9 +3,9 @@
   "_type": "tool",
   "definition": {
     "renderType": 0,
-    "texture": "creativearrowstaff",
+    "texture": "arrowstaff",
     "customModelName": "Normal",
-    "name": "creative Automated crossbow",
+    "name": "Automated crossbow",
     "creativeTab": {
       "value": "TOOLS"
     },
@@ -15,12 +15,12 @@
     "attackSpeed": 1.0,
     "enchantability": 2,
     "damageVsEntity": 4.0,
-    "usageCount": 100,
+    "usageCount": 200,
     "blocksAffected": [],
     "hasGlow": false,
     "repairItems": [],
     "onRightClickedInAir": {
-      "name": "AroowstaffRightClickedInAir"
+      "name": "SurvivalArrowstaffRightClickedInAir"
     }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "dinosaurworld:arrowstaff"
+    },
+    "title": {
+      "translate": "advancements.arrowstaffadvanc.title"
+    },
+    "description": {
+      "translate": "advancements.arrowstaffadvanc.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "arrowstaffadvanc": {
+      "trigger": "minecraft:item_durability_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "dinosaurworld:arrowstaff",
+            "durability": {
+              "min": 0,
+              "max": 16000
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1,
+    "recipes": [
+      "dinosaurworld:creativarrowstaff"
+    ]
+  }
+}

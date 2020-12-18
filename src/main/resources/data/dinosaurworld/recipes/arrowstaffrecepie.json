@@ -1,0 +1,30 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:string"
+    },
+    "1": {
+      "item": "minecraft:arrow"
+    },
+    "2": {
+      "item": "minecraft:string"
+    },
+    "4": {
+      "item": "dinosaurworld:cycadwood"
+    },
+    "7": {
+      "item": "dinosaurworld:cycadwood"
+    }
+  },
+  "result": {
+    "item": "dinosaurworld:arrowstaff",
+    "count": 1
+  }
+}

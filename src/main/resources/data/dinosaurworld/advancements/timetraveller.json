@@ -26,7 +26,8 @@
     "experience": 5,
     "recipes": [
       "dinosaurworld:newteleporterrecipe",
-      "dinosaurworld:shellshieldrecipe"
+      "dinosaurworld:shellshieldrecipe",
+      "dinosaurworld:arrowstaffrecepie"
     ]
   },
   "parent": "dinosaurworld:fossilgathering"

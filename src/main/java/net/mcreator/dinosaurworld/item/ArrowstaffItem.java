@@ -2,13 +2,13 @@
 package net.mcreator.dinosaurworld.item;
 
 @DinosaurworldElements.ModElement.Tag
-public class AroowstaffItem extends DinosaurworldElements.ModElement {
+public class ArrowstaffItem extends DinosaurworldElements.ModElement {
 
-	@ObjectHolder("dinosaurworld:aroowstaff")
+	@ObjectHolder("dinosaurworld:arrowstaff")
 	public static final Item block = null;
 
-	public AroowstaffItem(DinosaurworldElements instance) {
-		super(instance, 44);
+	public ArrowstaffItem(DinosaurworldElements instance) {
+		super(instance, 46);
 	}
 
 	@Override
@@ -24,21 +24,19 @@ public class AroowstaffItem extends DinosaurworldElements.ModElement {
 				int z = (int) entity.posZ;
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
-					$_dependencies.put("entity", entity);
-					$_dependencies.put("world", world);
 
-					AroowstaffRightClickedInAirProcedure.executeProcedure($_dependencies);
+					SurvivalArrowstaffRightClickedInAirProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
 			}
 
-		}.setRegistryName("aroowstaff"));
+		}.setRegistryName("arrowstaff"));
 	}
 
 	private static class ItemToolCustom extends Item {
 
 		protected ItemToolCustom() {
-			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(100));
+			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(200));
 		}
 
 		@Override
