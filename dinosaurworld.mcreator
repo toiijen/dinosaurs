@@ -312,24 +312,8 @@
       "ids": {}
     },
     {
-      "name": "ShellshieldToolInHandTick",
-      "type": "procedure",
-      "sortid": 26,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Shellshield",
-      "type": "tool",
+      "name": "Brachiosaurus",
+      "type": "mob",
       "sortid": 26,
       "compiles": true,
       "locked_code": false,
@@ -344,49 +328,9 @@
       "ids": {}
     },
     {
-      "name": "ShellshieldOnPlayerStoppedUsing",
-      "type": "procedure",
-      "sortid": 28,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Shell",
-      "type": "item",
-      "sortid": 29,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "Shellshieldrecipe",
       "type": "recipe",
       "sortid": 30,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Enemyofshelledcreatures",
-      "type": "achievement",
-      "sortid": 31,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Timetraveller",
-      "type": "achievement",
-      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -408,6 +352,22 @@
       }
     },
     {
+      "name": "Mobblowerrecepie",
+      "type": "recipe",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Wrench",
+      "type": "tool",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
       "name": "Welcometothenewworld",
       "type": "achievement",
       "sortid": 34,
@@ -416,12 +376,44 @@
       "ids": {}
     },
     {
-      "name": "Fossilgathering",
-      "type": "achievement",
-      "sortid": 35,
+      "name": "Mobblower",
+      "type": "tool",
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Timetraveller",
+      "type": "achievement",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Enemyofshelledcreatures",
+      "type": "achievement",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MobblowerMobIsHitWithTool",
+      "type": "procedure",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     },
     {
       "name": "WrenchRightClickedOnBlock",
@@ -452,14 +444,6 @@
       }
     },
     {
-      "name": "Wrench",
-      "type": "tool",
-      "sortid": 36,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
       "name": "Wrenchrecipe",
       "type": "recipe",
       "sortid": 37,
@@ -468,9 +452,9 @@
       "ids": {}
     },
     {
-      "name": "MobblowerMobIsHitWithTool",
+      "name": "ShellshieldToolInHandTick",
       "type": "procedure",
-      "sortid": 38,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -484,17 +468,41 @@
       }
     },
     {
-      "name": "Mobblower",
-      "type": "tool",
-      "sortid": 38,
+      "name": "Shell",
+      "type": "item",
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {}
     },
     {
-      "name": "Mobblowerrecepie",
-      "type": "recipe",
-      "sortid": 39,
+      "name": "ShellshieldOnPlayerStoppedUsing",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Shellshield",
+      "type": "tool",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Fossilgathering",
+      "type": "achievement",
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -503,14 +511,6 @@
       "name": "Snake",
       "type": "mob",
       "sortid": 40,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {}
-    },
-    {
-      "name": "Brachiosaurus",
-      "type": "mob",
-      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -685,13 +685,14 @@
       "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
       "item.dinosaurworld.arrowstaff": "Automated crossbow",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
+      "item.dinosaurworld.anky": "Anky",
       "item.dinosaurworld.mobblower": "Mobblower",
       "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
       "block.dinosaurworld.plot_roh": "electric fence corner",
       "item.dinosaurworld.wrench": "Wrench",
       "advancements.fossilgathering.descr": "gain fossil",
-      "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
       "block.dinosaurworld.plotspoj": "electric wires",
+      "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
       "item.dinosaurworld.snake": "Snake Spawn Egg",
       "entity.dinosaurworld.snake": "Snake",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
@@ -702,11 +703,13 @@
       "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
       "item.dinosaurworld.shellshielddontuse": "Shellshield",
       "advancements.timetraveller.descr": "travel to mesozoic",
+      "item.dinosaurworld.tpstaff": "Teleportation staff",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "item.dinosaurworld.brachiosaurus": "Brachiosaurus Spawn Egg",
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "advancements.enemyofshelledcreatures.title": "Enemy of shelled creatures",
       "item.dinosaurworld.shell": "Shell",
+      "item.dinosaurworld.aroowstaff": "creative Automated crossbow",
       "item.dinosaurworld.creativearowstaff": "creative Automated crossbow",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "entity.dinosaurworld.brachiosaurus": "Brachiosaurus",
