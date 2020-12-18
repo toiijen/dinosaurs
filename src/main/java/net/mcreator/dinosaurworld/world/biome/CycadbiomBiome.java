@@ -47,7 +47,7 @@ public class CycadbiomBiome extends DinosaurworldElements.ModElement {
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0.2f).depth(0.1f).scale(0.2f).temperature(1f).precipitation(Biome.RainType.RAIN)
-					.category(Biome.Category.SAVANNA).waterColor(-14329397).waterFogColor(-14329397).parent("desert")
+					.category(Biome.Category.SAVANNA).waterColor(-7700893).waterFogColor(-7700893).parent("desert")
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.GRASS_BLOCK.getDefaultState(),
 							Blocks.SAND.getDefaultState(), Blocks.SAND.getDefaultState())));
 			setRegistryName("cycadbiom");

@@ -514,6 +514,66 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "TpstaffRightClickedInAir",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tpstaff",
+      "type": "tool",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AroowstaffRightClickedInAir",
+      "type": "procedure",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Aroowstaff",
+      "type": "tool",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Anky",
+      "type": "tool",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -562,12 +622,13 @@
   "language_map": {
     "en_us": {
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
+      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-      "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
       "advancements.fossilgathering.title": "Archeologist",
+      "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
+      "item.dinosaurworld.anky": "Anky",
       "item.dinosaurworld.mobblower": "Mobblower",
       "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
       "block.dinosaurworld.plot_roh": "electric fence corner",
@@ -585,11 +646,13 @@
       "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
       "item.dinosaurworld.shellshielddontuse": "Shellshield",
       "advancements.timetraveller.descr": "travel to mesozoic",
+      "item.dinosaurworld.tpstaff": "Teleportation staff",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "item.dinosaurworld.brachiosaurus": "Brachiosaurus Spawn Egg",
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "advancements.enemyofshelledcreatures.title": "Enemy of shelled creatures",
       "item.dinosaurworld.shell": "Shell",
+      "item.dinosaurworld.aroowstaff": "Arrow staff",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "entity.dinosaurworld.brachiosaurus": "Brachiosaurus",
       "item.dinosaurworld.shellshield": "Shellshield",
