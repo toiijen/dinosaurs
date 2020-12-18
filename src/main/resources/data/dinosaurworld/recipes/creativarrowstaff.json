@@ -1,0 +1,30 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:nether_star"
+    },
+    "1": {
+      "item": "dinosaurworld:arrowstaff"
+    },
+    "2": {
+      "item": "minecraft:nether_star"
+    },
+    "4": {
+      "item": "minecraft:nether_star"
+    },
+    "7": {
+      "item": "minecraft:nether_star"
+    }
+  },
+  "result": {
+    "item": "dinosaurworld:creativearowstaff",
+    "count": 1
+  }
+}

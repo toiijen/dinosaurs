@@ -1,0 +1,45 @@
+{
+  "_fv": 6,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "xpReward": 0.0,
+    "recipeRetstackSize": 1,
+    "group": "",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      {
+        "value": "Items.NETHER_STAR"
+      },
+      {
+        "value": "CUSTOM:Arrowstaff"
+      },
+      {
+        "value": "Items.NETHER_STAR"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHER_STAR"
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": ""
+      },
+      {
+        "value": "Items.NETHER_STAR"
+      },
+      {
+        "value": ""
+      }
+    ],
+    "recipeReturnStack": {
+      "value": "CUSTOM:Aroowstaff"
+    },
+    "name": "creativarrowstaff",
+    "namespace": "mod"
+  }
+}

@@ -537,7 +537,8 @@
       "sortid": 44,
       "compiles": true,
       "locked_code": false,
-      "ids": {}
+      "ids": {},
+      "registry_name": "creativearowstaff"
     },
     {
       "name": "TpstaffRightClickedInAir",
@@ -574,6 +575,62 @@
           }
         ]
       }
+    },
+    {
+      "name": "Arrowstaff",
+      "type": "tool",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SurvivalArrowstaffRightClickedInAir",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Arrowstaffrecepie",
+      "type": "recipe",
+      "sortid": 48,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Creativarrowstaff",
+      "type": "recipe",
+      "sortid": 49,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Arrowstaffadvanc",
+      "type": "achievement",
+      "sortid": 50,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -622,11 +679,13 @@
   "language_map": {
     "en_us": {
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
+      "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-      "advancements.fossilgathering.title": "Archeologist",
       "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
+      "advancements.fossilgathering.title": "Archeologist",
+      "item.dinosaurworld.arrowstaff": "Automated crossbow",
+      "advancements.arrowstaffadvanc.descr": "use automated crossbow",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "item.dinosaurworld.anky": "Anky",
       "item.dinosaurworld.mobblower": "Mobblower",
@@ -652,10 +711,11 @@
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "advancements.enemyofshelledcreatures.title": "Enemy of shelled creatures",
       "item.dinosaurworld.shell": "Shell",
-      "item.dinosaurworld.aroowstaff": "Arrow staff",
+      "item.dinosaurworld.creativearowstaff": "creative Automated crossbow",
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "entity.dinosaurworld.brachiosaurus": "Brachiosaurus",
       "item.dinosaurworld.shellshield": "Shellshield",
+      "advancements.arrowstaffadvanc.title": "Not gonna use that slow crossbow again",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "block.dinosaurworld.fossil": "Fossil"
     }

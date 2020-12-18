@@ -15,7 +15,8 @@
     "rewardLoot": [],
     "rewardRecipes": [
       "Newteleporterrecipe",
-      "Shellshieldrecipe"
+      "Shellshieldrecipe",
+      "Arrowstaffrecepie"
     ],
     "rewardFunction": "No function",
     "rewardXP": 5,

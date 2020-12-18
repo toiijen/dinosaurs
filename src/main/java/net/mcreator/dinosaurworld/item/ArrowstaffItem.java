@@ -17,17 +17,17 @@ import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.BlockState;
 
-import net.mcreator.dinosaurworld.procedures.AroowstaffRightClickedInAirProcedure;
+import net.mcreator.dinosaurworld.procedures.SurvivalArrowstaffRightClickedInAirProcedure;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import com.google.common.collect.Multimap;
 
 @DinosaurworldElements.ModElement.Tag
-public class AroowstaffItem extends DinosaurworldElements.ModElement {
-	@ObjectHolder("dinosaurworld:creativearowstaff")
+public class ArrowstaffItem extends DinosaurworldElements.ModElement {
+	@ObjectHolder("dinosaurworld:arrowstaff")
 	public static final Item block = null;
-	public AroowstaffItem(DinosaurworldElements instance) {
-		super(instance, 44);
+	public ArrowstaffItem(DinosaurworldElements instance) {
+		super(instance, 46);
 	}
 
 	@Override
@@ -43,16 +43,17 @@ public class AroowstaffItem extends DinosaurworldElements.ModElement {
 				{
 					java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 					$_dependencies.put("entity", entity);
+					$_dependencies.put("itemstack", itemstack);
 					$_dependencies.put("world", world);
-					AroowstaffRightClickedInAirProcedure.executeProcedure($_dependencies);
+					SurvivalArrowstaffRightClickedInAirProcedure.executeProcedure($_dependencies);
 				}
 				return retval;
 			}
-		}.setRegistryName("creativearowstaff"));
+		}.setRegistryName("arrowstaff"));
 	}
 	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
-			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(100));
+			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(200));
 		}
 
 		@Override
