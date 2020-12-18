@@ -575,6 +575,8 @@
       "advancements.fossilgathering.descr": "gain fossil",
       "block.dinosaurworld.plotspoj": "electric wires",
       "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
+      "item.dinosaurworld.snake": "Snake Spawn Egg",
+      "entity.dinosaurworld.snake": "Snake",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "advancements.welcometothenewworld.descr": "travel to jurrasic dimension",
       "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
