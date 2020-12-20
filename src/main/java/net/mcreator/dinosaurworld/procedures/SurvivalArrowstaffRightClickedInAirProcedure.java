@@ -39,7 +39,7 @@ public class SurvivalArrowstaffRightClickedInAirProcedure extends DinosaurworldE
 				ArrowEntity entityToSpawn = new ArrowEntity(world, (LivingEntity) entity);
 				entityToSpawn.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, ((float) 10) * 2.0F, 0);
 				entityToSpawn.setDamage(((float) 5) * 2.0F);
-				entityToSpawn.setKnockbackStrength((int) 50);
+				entityToSpawn.setKnockbackStrength((int) 5);
 				world.addEntity(entityToSpawn);
 			}
 			if (entity instanceof PlayerEntity)
