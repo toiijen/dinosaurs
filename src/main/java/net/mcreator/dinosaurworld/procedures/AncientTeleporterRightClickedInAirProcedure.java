@@ -30,8 +30,23 @@ public class AncientTeleporterRightClickedInAirProcedure extends DinosaurworldEl
 			System.err.println("Failed to load dependency entity for procedure AncientTeleporterRightClickedInAir!");
 			return;
 		}
+		if (dependencies.get("x") == null) {
+			System.err.println("Failed to load dependency x for procedure AncientTeleporterRightClickedInAir!");
+			return;
+		}
+		if (dependencies.get("y") == null) {
+			System.err.println("Failed to load dependency y for procedure AncientTeleporterRightClickedInAir!");
+			return;
+		}
+		if (dependencies.get("z") == null) {
+			System.err.println("Failed to load dependency z for procedure AncientTeleporterRightClickedInAir!");
+			return;
+		}
 		Entity entity = (Entity) dependencies.get("entity");
-		if (((entity.isSneaking()) && ((entity.dimension.getId()) == (MesozoicDimension.type.getId())))) {
+		int x = (int) dependencies.get("x");
+		int y = (int) dependencies.get("y");
+		int z = (int) dependencies.get("z");
+		if (((entity.dimension.getId()) == (MesozoicDimension.type.getId()))) {
 			if (!entity.world.isRemote && entity instanceof ServerPlayerEntity) {
 				DimensionType destinationType = DimensionType.OVERWORLD;
 				ObfuscationReflectionHelper.setPrivateValue(ServerPlayerEntity.class, (ServerPlayerEntity) entity, true, "field_184851_cj");
@@ -45,6 +60,7 @@ public class AncientTeleporterRightClickedInAirProcedure extends DinosaurworldEl
 				}
 				((ServerPlayerEntity) entity).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
 			}
+			entity.setPositionAndUpdate(x, (y + 15), z);
 		} else if (((entity.dimension.getId()) == (0))) {
 			if (!entity.world.isRemote && entity instanceof ServerPlayerEntity) {
 				DimensionType destinationType = MesozoicDimension.type;
@@ -59,6 +75,7 @@ public class AncientTeleporterRightClickedInAirProcedure extends DinosaurworldEl
 				}
 				((ServerPlayerEntity) entity).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
 			}
+			entity.setPositionAndUpdate(x, (y + 15), z);
 		} else if (((entity.dimension.getId()) == (-1))) {
 			if (!entity.world.isRemote && entity instanceof ServerPlayerEntity) {
 				DimensionType destinationType = DimensionType.THE_END;
