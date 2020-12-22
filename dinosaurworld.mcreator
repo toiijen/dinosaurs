@@ -238,6 +238,10 @@
           {
             "name": "z",
             "type": "int"
+          },
+          {
+            "name": "world",
+            "type": "world"
           }
         ]
       }
@@ -642,6 +646,14 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "Pterodaktyl",
+      "type": "mob",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -690,11 +702,11 @@
   "language_map": {
     "en_us": {
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
+      "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-      "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
       "advancements.fossilgathering.title": "Archeologist",
+      "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
       "item.dinosaurworld.arrowstaff": "Automated crossbow",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "item.dinosaurworld.anky": "Anky",
@@ -707,11 +719,13 @@
       "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
       "item.dinosaurworld.snake": "Snake Spawn Egg",
       "entity.dinosaurworld.snake": "Snake",
+      "entity.dinosaurworld.pterodaktyl": "Pterodaktyl",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "advancements.welcometothenewworld.descr": "travel to jurrasic dimension",
       "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
       "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
       "advancements.timetraveller.title": "Timetraveller",
+      "item.dinosaurworld.pterodaktyl": "Pterodaktyl Spawn Egg",
       "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
       "item.dinosaurworld.shellshielddontuse": "Shellshield",
       "advancements.timetraveller.descr": "travel to mesozoic",

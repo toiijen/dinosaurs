@@ -5,6 +5,7 @@ import net.minecraftforge.fml.common.ObfuscationReflectionHelper;
 
 import net.minecraft.world.server.ServerWorld;
 import net.minecraft.world.dimension.DimensionType;
+import net.minecraft.world.World;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.server.MinecraftServer;
@@ -15,6 +16,7 @@ import net.minecraft.network.play.server.SPlayEntityEffectPacket;
 import net.minecraft.network.play.server.SChangeGameStatePacket;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.entity.Entity;
+import net.minecraft.block.Blocks;
 
 import net.mcreator.dinosaurworld.world.dimension.MesozoicDimension;
 import net.mcreator.dinosaurworld.world.dimension.JurassicworldDimension;
@@ -43,10 +45,15 @@ public class NewteleporterRightClickedInAirProcedure extends DinosaurworldElemen
 			System.err.println("Failed to load dependency z for procedure NewteleporterRightClickedInAir!");
 			return;
 		}
+		if (dependencies.get("world") == null) {
+			System.err.println("Failed to load dependency world for procedure NewteleporterRightClickedInAir!");
+			return;
+		}
 		Entity entity = (Entity) dependencies.get("entity");
 		int x = (int) dependencies.get("x");
 		int y = (int) dependencies.get("y");
 		int z = (int) dependencies.get("z");
+		World world = (World) dependencies.get("world");
 		if (((entity.dimension.getId()) == (0))) {
 			if (!entity.world.isRemote && entity instanceof ServerPlayerEntity) {
 				DimensionType destinationType = JurassicworldDimension.type;
@@ -61,6 +68,10 @@ public class NewteleporterRightClickedInAirProcedure extends DinosaurworldElemen
 				}
 				((ServerPlayerEntity) entity).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
 			}
+			if ((!(((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
+					|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())))) {
+				entity.setPositionAndUpdate(x, (y + 1), z);
+			}
 		} else if (((entity.dimension.getId()) == (-1))) {
 			if (!entity.world.isRemote && entity instanceof ServerPlayerEntity) {
 				DimensionType destinationType = MesozoicDimension.type;
@@ -74,6 +85,10 @@ public class NewteleporterRightClickedInAirProcedure extends DinosaurworldElemen
 					((ServerPlayerEntity) entity).connection.sendPacket(new SPlayEntityEffectPacket(entity.getEntityId(), effectinstance));
 				}
 				((ServerPlayerEntity) entity).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
+			}
+			if ((!(((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
+					|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())))) {
+				entity.setPositionAndUpdate(x, (y + 1), z);
 			}
 		} else if (((entity.dimension.getId()) == (1))) {
 			if (!entity.world.isRemote && entity instanceof ServerPlayerEntity) {
@@ -109,6 +124,10 @@ public class NewteleporterRightClickedInAirProcedure extends DinosaurworldElemen
 				}
 				((ServerPlayerEntity) entity).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
 			}
+			if ((!(((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
+					|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())))) {
+				entity.setPositionAndUpdate(x, (y + 1), z);
+			}
 		} else if (((entity.dimension.getId()) == (JurassicworldDimension.type.getId()))) {
 			if (!entity.world.isRemote && entity instanceof ServerPlayerEntity) {
 				DimensionType destinationType = MesozoicDimension.type;
@@ -122,6 +141,10 @@ public class NewteleporterRightClickedInAirProcedure extends DinosaurworldElemen
 					((ServerPlayerEntity) entity).connection.sendPacket(new SPlayEntityEffectPacket(entity.getEntityId(), effectinstance));
 				}
 				((ServerPlayerEntity) entity).connection.sendPacket(new SPlaySoundEventPacket(1032, BlockPos.ZERO, 0, false));
+			}
+			if ((!(((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.CAVE_AIR.getDefaultState().getBlock())
+					|| ((world.getBlockState(new BlockPos((int) x, (int) y, (int) z))).getBlock() == Blocks.AIR.getDefaultState().getBlock())))) {
+				entity.setPositionAndUpdate(x, (y + 1), z);
 			}
 		}
 	}
