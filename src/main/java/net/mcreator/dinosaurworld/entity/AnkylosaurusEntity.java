@@ -60,7 +60,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 public class AnkylosaurusEntity extends DinosaurworldElements.ModElement {
 	public static EntityType entity = null;
 	public AnkylosaurusEntity(DinosaurworldElements instance) {
-		super(instance, 10);
+		super(instance, 23);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

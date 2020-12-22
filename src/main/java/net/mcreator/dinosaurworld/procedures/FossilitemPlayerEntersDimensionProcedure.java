@@ -12,7 +12,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 @DinosaurworldElements.ModElement.Tag
 public class FossilitemPlayerEntersDimensionProcedure extends DinosaurworldElements.ModElement {
 	public FossilitemPlayerEntersDimensionProcedure(DinosaurworldElements instance) {
-		super(instance, 2);
+		super(instance, 26);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

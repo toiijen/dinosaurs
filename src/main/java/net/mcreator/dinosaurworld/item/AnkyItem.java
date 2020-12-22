@@ -16,7 +16,7 @@ public class AnkyItem extends DinosaurworldElements.ModElement {
 	@ObjectHolder("dinosaurworld:anky")
 	public static final Item block = null;
 	public AnkyItem(DinosaurworldElements instance) {
-		super(instance, 45);
+		super(instance, 20);
 	}
 
 	@Override

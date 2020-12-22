@@ -1,59 +1,14 @@
 
 package net.mcreator.dinosaurworld.entity;
 
-import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.fml.network.FMLPlayMessages;
-import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.client.registry.RenderingRegistry;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.client.event.ModelRegistryEvent;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.gen.Heightmap;
-import net.minecraft.world.biome.Biome;
-import net.minecraft.world.World;
-import net.minecraft.util.math.Vec3d;
-import net.minecraft.util.math.BlockPos;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.util.DamageSource;
-import net.minecraft.pathfinding.FlyingPathNavigator;
-import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.Item;
-import net.minecraft.entity.passive.AnimalEntity;
-import net.minecraft.entity.ai.goal.SwimGoal;
-import net.minecraft.entity.ai.goal.RandomWalkingGoal;
-import net.minecraft.entity.ai.goal.PanicGoal;
-import net.minecraft.entity.ai.goal.LookRandomlyGoal;
-import net.minecraft.entity.ai.goal.HurtByTargetGoal;
-import net.minecraft.entity.ai.goal.Goal;
-import net.minecraft.entity.ai.goal.FollowMobGoal;
-import net.minecraft.entity.ai.controller.FlyingMovementController;
-import net.minecraft.entity.SharedMonsterAttributes;
-import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.EntityType;
-import net.minecraft.entity.EntitySpawnPlacementRegistry;
-import net.minecraft.entity.EntityClassification;
-import net.minecraft.entity.Entity;
-import net.minecraft.entity.CreatureEntity;
-import net.minecraft.entity.CreatureAttribute;
-import net.minecraft.client.renderer.entity.model.BipedModel;
-import net.minecraft.client.renderer.entity.layers.BipedArmorLayer;
-import net.minecraft.client.renderer.entity.BipedRenderer;
-import net.minecraft.block.BlockState;
-
-import net.mcreator.dinosaurworld.DinosaurworldElements;
-
-import java.util.Random;
-import java.util.EnumSet;
-
 @DinosaurworldElements.ModElement.Tag
 public class PterodaktylEntity extends DinosaurworldElements.ModElement {
+
 	public static EntityType entity = null;
+
 	public PterodaktylEntity(DinosaurworldElements instance) {
 		super(instance, 51);
+
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -62,9 +17,12 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 		entity = (EntityType.Builder.<CustomEntity>create(CustomEntity::new, EntityClassification.CREATURE).setShouldReceiveVelocityUpdates(true)
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(0.6f, 1.8f)).build("pterodaktyl")
 						.setRegistryName("pterodaktyl");
+
 		elements.entities.add(() -> entity);
+
 		elements.items
 				.add(() -> new SpawnEggItem(entity, -7185895, -7379386, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("pterodaktyl"));
+
 	}
 
 	@Override
@@ -99,10 +57,13 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 				biomeCriteria = true;
 			if (!biomeCriteria)
 				continue;
+
 			biome.getSpawns(EntityClassification.CREATURE).add(new Biome.SpawnListEntry(entity, 20, 3, 30));
 		}
+
 		EntitySpawnPlacementRegistry.register(entity, EntitySpawnPlacementRegistry.PlacementType.ON_GROUND, Heightmap.Type.MOTION_BLOCKING_NO_LEAVES,
 				AnimalEntity::func_223315_a);
+
 	}
 
 	@SubscribeEvent
@@ -117,8 +78,11 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 			customRender.addLayer(new BipedArmorLayer(customRender, new BipedModel(0.5f), new BipedModel(1)));
 			return customRender;
 		});
+
 	}
+
 	public static class CustomEntity extends CreatureEntity {
+
 		public CustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			this(entity, world);
 		}
@@ -127,6 +91,7 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 			super(type, world);
 			experienceValue = 2;
 			setNoAI(false);
+
 			this.moveController = new FlyingMovementController(this);
 			this.navigator = new FlyingPathNavigator(this, this.world);
 		}
@@ -134,7 +99,9 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 		@Override
 		protected void registerGoals() {
 			super.registerGoals();
+
 			this.goalSelector.addGoal(1, new RandomWalkingGoal(this, 0.8, 20) {
+
 				@Override
 				protected Vec3d getPosition() {
 					Random random = CustomEntity.this.getRNG();
@@ -143,6 +110,7 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 					double dir_z = CustomEntity.this.posZ + ((random.nextFloat() * 2 - 1) * 16);
 					return new Vec3d(dir_x, dir_y, dir_z);
 				}
+
 			});
 			this.goalSelector.addGoal(2, new LookRandomlyGoal(this));
 			this.goalSelector.addGoal(3, new SwimGoal(this));
@@ -151,6 +119,7 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 				{
 					this.setMutexFlags(EnumSet.of(Goal.Flag.MOVE));
 				}
+
 				public boolean shouldExecute() {
 					if (CustomEntity.this.getAttackTarget() != null && !CustomEntity.this.getMoveHelper().isUpdating()) {
 						return true;
@@ -188,6 +157,7 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 			});
 			this.targetSelector.addGoal(6, new HurtByTargetGoal(this));
 			this.goalSelector.addGoal(7, new FollowMobGoal(this, (float) 1, 10, 5));
+
 		}
 
 		@Override
@@ -226,6 +196,7 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 		@Override
 		protected void registerAttributes() {
 			super.registerAttributes();
+
 			if (this.getAttribute(SharedMonsterAttributes.ARMOR) != null)
 				this.getAttribute(SharedMonsterAttributes.ARMOR).setBaseValue(0);
 			if (this.getAttribute(SharedMonsterAttributes.MOVEMENT_SPEED) != null)
@@ -234,6 +205,7 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 				this.getAttribute(SharedMonsterAttributes.MAX_HEALTH).setBaseValue(10);
 			if (this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE) != null)
 				this.getAttribute(SharedMonsterAttributes.ATTACK_DAMAGE).setBaseValue(3);
+
 			this.getAttributes().registerAttribute(SharedMonsterAttributes.FLYING_SPEED);
 			this.getAttribute(SharedMonsterAttributes.FLYING_SPEED).setBaseValue(0.3);
 		}
@@ -249,7 +221,11 @@ public class PterodaktylEntity extends DinosaurworldElements.ModElement {
 
 		public void livingTick() {
 			super.livingTick();
+
 			this.setNoGravity(true);
+
 		}
+
 	}
+
 }
