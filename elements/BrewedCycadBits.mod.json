@@ -1,0 +1,27 @@
+{
+  "_fv": 6,
+  "_type": "potion",
+  "definition": {
+    "name": "Brewed Cycad Bits",
+    "effectName": "Brewed Cycad Bits",
+    "icon": "brewed_cycad_stuff.png",
+    "color": {
+      "value": -6684775,
+      "falpha": 0.0
+    },
+    "isInstant": false,
+    "isBad": false,
+    "isBenefitical": true,
+    "registerPotionType": true,
+    "curativeItems": [
+      {
+        "value": "Items.MILK_BUCKET"
+      }
+    ],
+    "renderStatusInInventory": true,
+    "renderStatusInHUD": true,
+    "onStarted": {
+      "name": "BrewedCycadBitsPotionStartedapplied"
+    }
+  }
+}

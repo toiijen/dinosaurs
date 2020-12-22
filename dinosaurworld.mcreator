@@ -630,6 +630,38 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "BrewedCycadBitsPotionStartedapplied",
+      "type": "procedure",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "BrewedCycadBits",
+      "type": "potion",
+      "sortid": 51,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BrewedCycadBitsRecipe",
+      "type": "recipe",
+      "sortid": 52,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -678,14 +710,16 @@
   "language_map": {
     "en_us": {
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
+      "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-      "advancements.fossilgathering.title": "Archeologist",
       "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
+      "advancements.fossilgathering.title": "Archeologist",
+      "item.minecraft.lingering_potion.effect.brewedcycadbits": "Lingering Brewed Cycad Bits",
       "item.dinosaurworld.arrowstaff": "Automated crossbow",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "item.dinosaurworld.anky": "Anky",
+      "item.minecraft.splash_potion.effect.brewedcycadbits": "Splash Brewed Cycad Bits",
       "item.dinosaurworld.mobblower": "Mobblower",
       "block.dinosaurworld.elektrickyplotstred": "electric fence middle",
       "block.dinosaurworld.plot_roh": "electric fence corner",
@@ -695,6 +729,7 @@
       "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
       "item.dinosaurworld.snake": "Snake Spawn Egg",
       "entity.dinosaurworld.snake": "Snake",
+      "item.minecraft.tipped_arrow.effect.brewedcycadbits": "Arrow of Brewed Cycad Bits",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "advancements.welcometothenewworld.descr": "travel to jurrasic dimension",
       "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
@@ -704,7 +739,9 @@
       "item.dinosaurworld.shellshielddontuse": "Shellshield",
       "advancements.timetraveller.descr": "travel to mesozoic",
       "item.dinosaurworld.tpstaff": "Teleportation staff",
+      "item.minecraft.potion.effect.brewedcycadbits": "Brewed Cycad Bits",
       "item.dinosaurworld.fossilitem": "Fossilitem",
+      "effect.brewedcycadbits": "Brewed Cycad Bits",
       "item.dinosaurworld.brachiosaurus": "Brachiosaurus Spawn Egg",
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "advancements.enemyofshelledcreatures.title": "Enemy of shelled creatures",
