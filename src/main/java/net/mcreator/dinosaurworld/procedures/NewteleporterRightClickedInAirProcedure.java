@@ -23,7 +23,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 @DinosaurworldElements.ModElement.Tag
 public class NewteleporterRightClickedInAirProcedure extends DinosaurworldElements.ModElement {
 	public NewteleporterRightClickedInAirProcedure(DinosaurworldElements instance) {
-		super(instance, 16);
+		super(instance, 34);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

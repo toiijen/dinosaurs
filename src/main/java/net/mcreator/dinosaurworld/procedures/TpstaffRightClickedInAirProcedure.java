@@ -8,7 +8,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 @DinosaurworldElements.ModElement.Tag
 public class TpstaffRightClickedInAirProcedure extends DinosaurworldElements.ModElement {
 	public TpstaffRightClickedInAirProcedure(DinosaurworldElements instance) {
-		super(instance, 42);
+		super(instance, 51);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

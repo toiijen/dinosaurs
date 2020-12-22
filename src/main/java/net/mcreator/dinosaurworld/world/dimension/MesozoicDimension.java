@@ -72,7 +72,7 @@ public class MesozoicDimension extends DinosaurworldElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public MesozoicDimension(DinosaurworldElements instance) {
-		super(instance, 1);
+		super(instance, 10);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

@@ -13,7 +13,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 @DinosaurworldElements.ModElement.Tag
 public class ElektrickyplotEntityWalksOnTheBlockProcedure extends DinosaurworldElements.ModElement {
 	public ElektrickyplotEntityWalksOnTheBlockProcedure(DinosaurworldElements instance) {
-		super(instance, 22);
+		super(instance, 36);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

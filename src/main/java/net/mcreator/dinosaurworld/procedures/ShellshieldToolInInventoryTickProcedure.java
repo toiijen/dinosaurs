@@ -12,7 +12,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 @DinosaurworldElements.ModElement.Tag
 public class ShellshieldToolInInventoryTickProcedure extends DinosaurworldElements.ModElement {
 	public ShellshieldToolInInventoryTickProcedure(DinosaurworldElements instance) {
-		super(instance, 33);
+		super(instance, 40);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

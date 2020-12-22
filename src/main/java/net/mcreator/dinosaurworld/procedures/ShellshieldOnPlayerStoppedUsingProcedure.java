@@ -9,7 +9,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 @DinosaurworldElements.ModElement.Tag
 public class ShellshieldOnPlayerStoppedUsingProcedure extends DinosaurworldElements.ModElement {
 	public ShellshieldOnPlayerStoppedUsingProcedure(DinosaurworldElements instance) {
-		super(instance, 28);
+		super(instance, 49);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

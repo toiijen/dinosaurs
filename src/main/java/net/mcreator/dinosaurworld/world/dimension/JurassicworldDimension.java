@@ -69,7 +69,7 @@ public class JurassicworldDimension extends DinosaurworldElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public JurassicworldDimension(DinosaurworldElements instance) {
-		super(instance, 13);
+		super(instance, 12);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

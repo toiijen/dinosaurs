@@ -30,7 +30,7 @@ public class BrewedCycadBitsPotion extends DinosaurworldElements.ModElement {
 	@ObjectHolder("dinosaurworld:brewedcycadbits")
 	public static final Potion potionType = null;
 	public BrewedCycadBitsPotion(DinosaurworldElements instance) {
-		super(instance, 51);
+		super(instance, 58);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

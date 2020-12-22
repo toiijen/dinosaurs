@@ -10,7 +10,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 @DinosaurworldElements.ModElement.Tag
 public class AroowstaffRightClickedInAirProcedure extends DinosaurworldElements.ModElement {
 	public AroowstaffRightClickedInAirProcedure(DinosaurworldElements instance) {
-		super(instance, 44);
+		super(instance, 52);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

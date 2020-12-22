@@ -32,7 +32,7 @@ public class CycadbiomBiome extends DinosaurworldElements.ModElement {
 	@ObjectHolder("dinosaurworld:cycadbiom")
 	public static final CustomBiome biome = null;
 	public CycadbiomBiome(DinosaurworldElements instance) {
-		super(instance, 7);
+		super(instance, 29);
 	}
 
 	@Override

@@ -45,7 +45,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 public class BrachiosaurusEntity extends DinosaurworldElements.ModElement {
 	public static EntityType entity = null;
 	public BrachiosaurusEntity(DinosaurworldElements instance) {
-		super(instance, 26);
+		super(instance, 24);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

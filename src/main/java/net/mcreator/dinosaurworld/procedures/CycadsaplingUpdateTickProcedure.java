@@ -22,7 +22,7 @@ import java.util.Map;
 @DinosaurworldElements.ModElement.Tag
 public class CycadsaplingUpdateTickProcedure extends DinosaurworldElements.ModElement {
 	public CycadsaplingUpdateTickProcedure(DinosaurworldElements instance) {
-		super(instance, 8);
+		super(instance, 30);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {
