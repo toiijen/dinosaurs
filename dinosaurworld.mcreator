@@ -717,6 +717,7 @@
       "advancements.fossilgathering.title": "Archeologist",
       "item.minecraft.lingering_potion.effect.brewedcycadbits": "Lingering Brewed Cycad Bits",
       "item.dinosaurworld.arrowstaff": "Automated crossbow",
+      "advancements.arrowstaffadvanc.descr": "use automated crossbow",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "item.dinosaurworld.anky": "Anky",
       "item.minecraft.splash_potion.effect.brewedcycadbits": "Splash Brewed Cycad Bits",
@@ -751,6 +752,7 @@
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "entity.dinosaurworld.brachiosaurus": "Brachiosaurus",
       "item.dinosaurworld.shellshield": "Shellshield",
+      "advancements.arrowstaffadvanc.title": "Not gonna use that slow crossbow again",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "block.dinosaurworld.fossil": "Fossil"
     }
