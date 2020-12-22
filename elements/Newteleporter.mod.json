@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "New teleporter(never use in end)",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:LeDinoMod"
     },
     "toolType": "Special",
     "harvestLevel": 0,

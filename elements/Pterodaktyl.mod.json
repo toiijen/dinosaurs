@@ -4,8 +4,8 @@
   "definition": {
     "mobName": "Pterodaktyl",
     "mobLabel": "",
-    "mobModelTexture": "snake.png",
-    "mobModelName": "Biped",
+    "mobModelTexture": "pterotexture.png",
+    "mobModelName": "Modelpterodaktyl",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
     "modelShadowSize": 0.5,
@@ -20,7 +20,7 @@
       "falpha": 0.0
     },
     "creativeTab": {
-      "value": "MISC"
+      "value": "CUSTOM:LeDinoMod"
     },
     "isBoss": false,
     "bossBarColor": "PINK",

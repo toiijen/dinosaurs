@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Ancient Teleporter(Never use in hell)",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:LeDinoMod"
     },
     "toolType": "Special",
     "harvestLevel": 0,

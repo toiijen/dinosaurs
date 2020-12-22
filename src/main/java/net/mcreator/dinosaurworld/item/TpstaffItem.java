@@ -11,7 +11,6 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
 import net.minecraft.item.ItemUseContext;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.player.PlayerEntity;
@@ -21,6 +20,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.dinosaurworld.procedures.TpstaffRightClickedInAirProcedure;
+import net.mcreator.dinosaurworld.itemgroup.LeDinoModItemGroup;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import com.google.common.collect.Multimap;
@@ -73,7 +73,7 @@ public class TpstaffItem extends DinosaurworldElements.ModElement {
 	}
 	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
-			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(100));
+			super(new Item.Properties().group(LeDinoModItemGroup.tab).maxDamage(100));
 		}
 
 		@Override

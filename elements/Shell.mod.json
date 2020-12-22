@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Shell",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:LeDinoMod"
     },
     "stackSize": 64,
     "enchantability": 0,

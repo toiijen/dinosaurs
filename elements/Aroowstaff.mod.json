@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "creative Automated crossbow",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:LeDinoMod"
     },
     "toolType": "Special",
     "harvestLevel": 0,

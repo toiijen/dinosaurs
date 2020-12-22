@@ -1,15 +1,51 @@
 
 package net.mcreator.dinosaurworld.item;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.network.NetworkHooks;
+import net.minecraftforge.fml.network.FMLPlayMessages;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.client.registry.RenderingRegistry;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.World;
+import net.minecraft.util.SoundCategory;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.util.Hand;
+import net.minecraft.util.ActionResultType;
+import net.minecraft.util.ActionResult;
+import net.minecraft.network.IPacket;
+import net.minecraft.item.UseAction;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Item;
+import net.minecraft.inventory.EquipmentSlotType;
+import net.minecraft.entity.projectile.AbstractArrowEntity;
+import net.minecraft.entity.player.ServerPlayerEntity;
+import net.minecraft.entity.player.PlayerEntity;
+import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.SharedMonsterAttributes;
+import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.IRendersAsItem;
+import net.minecraft.entity.EntityType;
+import net.minecraft.entity.EntityClassification;
+import net.minecraft.entity.Entity;
+import net.minecraft.client.renderer.entity.SpriteRenderer;
+import net.minecraft.client.Minecraft;
+import net.minecraft.block.Blocks;
+
+import net.mcreator.dinosaurworld.itemgroup.LeDinoModItemGroup;
+import net.mcreator.dinosaurworld.DinosaurworldElements;
+
+import com.google.common.collect.Multimap;
+
 @DinosaurworldElements.ModElement.Tag
 public class FranchiSPAS12Item extends DinosaurworldElements.ModElement {
-
 	@ObjectHolder("dinosaurworld:franchispas12")
 	public static final Item block = null;
-
 	@ObjectHolder("dinosaurworld:entitybulletfranchispas12")
 	public static final EntityType arrow = null;
-
 	public FranchiSPAS12Item(DinosaurworldElements instance) {
 		super(instance, 61);
 	}
@@ -29,12 +65,9 @@ public class FranchiSPAS12Item extends DinosaurworldElements.ModElement {
 			return new SpriteRenderer(renderManager, Minecraft.getInstance().getItemRenderer());
 		});
 	}
-
 	public static class ItemRanged extends Item {
-
 		public ItemRanged() {
 			super(new Item.Properties().group(LeDinoModItemGroup.tab).maxDamage(100));
-
 			setRegistryName("franchispas12");
 		}
 
@@ -78,29 +111,22 @@ public class FranchiSPAS12Item extends DinosaurworldElements.ModElement {
 				entityarrow.setIsCritical(false);
 				entityarrow.setDamage(7);
 				entityarrow.setKnockbackStrength(10);
-
 				itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
-
 				int x = (int) entity.posX;
 				int y = (int) entity.posY;
 				int z = (int) entity.posZ;
 				world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
 						(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
 						SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
-
 				entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
-
 				world.addEntity(entityarrow);
-
 				entity.stopActiveHand();
 			}
 		}
-
 	}
 
 	@OnlyIn(value = Dist.CLIENT, _interface = IRendersAsItem.class)
 	public static class ArrowCustomEntity extends AbstractArrowEntity implements IRendersAsItem {
-
 		public ArrowCustomEntity(FMLPlayMessages.SpawnEntity packet, World world) {
 			super(arrow, world);
 		}
@@ -151,7 +177,5 @@ public class FranchiSPAS12Item extends DinosaurworldElements.ModElement {
 				this.remove();
 			}
 		}
-
 	}
-
 }

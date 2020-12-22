@@ -46,7 +46,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 public class SnakeEntity extends DinosaurworldElements.ModElement {
 	public static EntityType entity = null;
 	public SnakeEntity(DinosaurworldElements instance) {
-		super(instance, 25);
+		super(instance, 40);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

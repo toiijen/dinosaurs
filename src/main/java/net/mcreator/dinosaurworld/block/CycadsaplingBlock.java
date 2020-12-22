@@ -23,7 +23,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.potion.Effects;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.item.BlockItem;
 import net.minecraft.block.material.Material;
@@ -34,6 +33,7 @@ import net.minecraft.block.Block;
 
 import net.mcreator.dinosaurworld.world.dimension.MesozoicDimension;
 import net.mcreator.dinosaurworld.procedures.CycadsaplingUpdateTickProcedure;
+import net.mcreator.dinosaurworld.itemgroup.LeDinoModItemGroup;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import java.util.Random;
@@ -51,7 +51,7 @@ public class CycadsaplingBlock extends DinosaurworldElements.ModElement {
 	@Override
 	public void initElements() {
 		elements.blocks.add(() -> new BlockCustomFlower());
-		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(ItemGroup.DECORATIONS)).setRegistryName(block.getRegistryName()));
+		elements.items.add(() -> new BlockItem(block, new Item.Properties().group(LeDinoModItemGroup.tab)).setRegistryName(block.getRegistryName()));
 	}
 
 	@Override
