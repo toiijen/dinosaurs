@@ -65,18 +65,6 @@
           {
             "name": "entity",
             "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "int"
-          },
-          {
-            "name": "y",
-            "type": "int"
-          },
-          {
-            "name": "z",
-            "type": "int"
           }
         ]
       }
@@ -238,10 +226,6 @@
           {
             "name": "z",
             "type": "int"
-          },
-          {
-            "name": "world",
-            "type": "world"
           }
         ]
       }
@@ -760,15 +744,11 @@
       "block.dinosaurworld.plotspoj": "electric wires",
       "item.dinosaurworld.snake": "Snake Spawn Egg",
       "entity.dinosaurworld.snake": "Snake",
-      "item.minecraft.tipped_arrow.effect.brewedcycadbits": "Arrow of Brewed Cycad Bits",
-      "entity.dinosaurworld.pterodaktyl": "Pterodaktyl",
       "block.dinosaurworld.cyadleaves": "Cyadleaves",
       "advancements.welcometothenewworld.descr": "travel to jurrasic dimension",
       "advancements.timetraveller.title": "Timetraveller",
       "item.dinosaurworld.pterodaktyl": "Pterodaktyl Spawn Egg",
       "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
-      "itemGroup.tabledinomod": "Le Dino Mod",
-      "effect.brewedcycadbits": "Brewed Cycad Bits",
       "item.dinosaurworld.brachiosaurus": "Brachiosaurus Spawn Egg",
       "item.dinosaurworld.shell": "Shell",
       "item.dinosaurworld.creativearowstaff": "creative Automated crossbow",
@@ -777,10 +757,8 @@
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
       "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "advancements.fossilgathering.title": "Archeologist",
-      "item.minecraft.lingering_potion.effect.brewedcycadbits": "Lingering Brewed Cycad Bits",
       "item.dinosaurworld.arrowstaff": "Automated crossbow",
       "advancements.arrowstaffadvanc.descr": "use automated crossbow",
-      "item.minecraft.splash_potion.effect.brewedcycadbits": "Splash Brewed Cycad Bits",
       "item.dinosaurworld.mobblower": "Mobblower",
       "advancements.fossilgathering.descr": "gain fossil",
       "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
@@ -789,7 +767,6 @@
       "item.dinosaurworld.shellshielddontuse": "Shellshield",
       "advancements.timetraveller.descr": "travel to mesozoic",
       "item.dinosaurworld.tpstaff": "Teleportation staff",
-      "item.minecraft.potion.effect.brewedcycadbits": "Brewed Cycad Bits",
       "item.dinosaurworld.fossilitem": "Fossilitem",
       "block.dinosaurworld.cycadwood": "Cycadwood",
       "advancements.enemyofshelledcreatures.title": "Enemy of shelled creatures",
@@ -797,7 +774,6 @@
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "item.dinosaurworld.shellshield": "Shellshield",
       "advancements.arrowstaffadvanc.title": "Not gonna use that slow crossbow again",
-      "item.dinosaurworld.franchispas12": "Franchi SPAS12",
       "block.dinosaurworld.fossil": "Fossil"
     }
   },

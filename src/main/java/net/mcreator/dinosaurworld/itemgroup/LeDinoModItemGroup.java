@@ -1,17 +1,9 @@
 
 package net.mcreator.dinosaurworld.itemgroup;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
-
-import net.mcreator.dinosaurworld.item.AncientTeleporterItem;
-import net.mcreator.dinosaurworld.DinosaurworldElements;
-
 @DinosaurworldElements.ModElement.Tag
 public class LeDinoModItemGroup extends DinosaurworldElements.ModElement {
+
 	public LeDinoModItemGroup(DinosaurworldElements instance) {
 		super(instance, 60);
 	}
@@ -31,5 +23,7 @@ public class LeDinoModItemGroup extends DinosaurworldElements.ModElement {
 			}
 		};
 	}
+
 	public static ItemGroup tab;
+
 }
