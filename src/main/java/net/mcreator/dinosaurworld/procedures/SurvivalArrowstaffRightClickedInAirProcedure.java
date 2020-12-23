@@ -15,7 +15,7 @@ import java.util.Random;
 @DinosaurworldElements.ModElement.Tag
 public class SurvivalArrowstaffRightClickedInAirProcedure extends DinosaurworldElements.ModElement {
 	public SurvivalArrowstaffRightClickedInAirProcedure(DinosaurworldElements instance) {
-		super(instance, 47);
+		super(instance, 55);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

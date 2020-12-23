@@ -11,7 +11,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 @DinosaurworldElements.ModElement.Tag
 public class WrenchRightClickedOnBlockProcedure extends DinosaurworldElements.ModElement {
 	public WrenchRightClickedOnBlockProcedure(DinosaurworldElements instance) {
-		super(instance, 36);
+		super(instance, 46);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

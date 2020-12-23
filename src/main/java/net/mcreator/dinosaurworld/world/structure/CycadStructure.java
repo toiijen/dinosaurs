@@ -33,7 +33,7 @@ import java.util.Random;
 @DinosaurworldElements.ModElement.Tag
 public class CycadStructure extends DinosaurworldElements.ModElement {
 	public CycadStructure(DinosaurworldElements instance) {
-		super(instance, 9);
+		super(instance, 31);
 	}
 
 	@Override

@@ -22,7 +22,6 @@ import net.minecraft.util.DamageSource;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.SpawnEggItem;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.PotionEntity;
 import net.minecraft.entity.projectile.ArrowEntity;
@@ -52,6 +51,7 @@ import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import net.mcreator.dinosaurworld.itemgroup.LeDinoModItemGroup;
 import net.mcreator.dinosaurworld.item.ShellItem;
 import net.mcreator.dinosaurworld.block.CycadsaplingBlock;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
@@ -70,8 +70,8 @@ public class AnkylosaurusEntity extends DinosaurworldElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(1.32f, 1f)).build("ankylosaurus")
 						.setRegistryName("ankylosaurus");
 		elements.entities.add(() -> entity);
-		elements.items.add(
-				() -> new SpawnEggItem(entity, -16724941, -6711040, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("ankylosaurus"));
+		elements.items.add(() -> new SpawnEggItem(entity, -16724941, -6711040, new Item.Properties().group(LeDinoModItemGroup.tab))
+				.setRegistryName("ankylosaurus"));
 	}
 
 	@Override

@@ -4,10 +4,10 @@ package net.mcreator.dinosaurworld.item;
 import net.minecraftforge.registries.ObjectHolder;
 
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.block.BlockState;
 
+import net.mcreator.dinosaurworld.itemgroup.LeDinoModItemGroup;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 @DinosaurworldElements.ModElement.Tag
@@ -24,7 +24,7 @@ public class FossilitemItem extends DinosaurworldElements.ModElement {
 	}
 	public static class ItemCustom extends Item {
 		public ItemCustom() {
-			super(new Item.Properties().group(ItemGroup.MATERIALS).maxStackSize(64));
+			super(new Item.Properties().group(LeDinoModItemGroup.tab).maxStackSize(64));
 			setRegistryName("fossilitem");
 		}
 

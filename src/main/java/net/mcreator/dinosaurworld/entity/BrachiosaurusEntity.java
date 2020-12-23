@@ -17,7 +17,6 @@ import net.minecraft.world.World;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.DamageSource;
 import net.minecraft.item.SpawnEggItem;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.ArrowEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -39,6 +38,7 @@ import net.minecraft.client.renderer.entity.model.RendererModel;
 import net.minecraft.client.renderer.entity.model.EntityModel;
 import net.minecraft.client.renderer.entity.MobRenderer;
 
+import net.mcreator.dinosaurworld.itemgroup.LeDinoModItemGroup;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 @DinosaurworldElements.ModElement.Tag
@@ -55,7 +55,8 @@ public class BrachiosaurusEntity extends DinosaurworldElements.ModElement {
 				.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(CustomEntity::new).size(10f, 10f)).build("brachiosaurus")
 						.setRegistryName("brachiosaurus");
 		elements.entities.add(() -> entity);
-		elements.items.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(ItemGroup.MISC)).setRegistryName("brachiosaurus"));
+		elements.items
+				.add(() -> new SpawnEggItem(entity, -1, -1, new Item.Properties().group(LeDinoModItemGroup.tab)).setRegistryName("brachiosaurus"));
 	}
 
 	@Override

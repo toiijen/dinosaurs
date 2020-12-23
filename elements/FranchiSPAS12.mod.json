@@ -1,0 +1,35 @@
+{
+  "_fv": 6,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "spas12item",
+    "customModelName": "Normal",
+    "name": "Franchi SPAS12",
+    "creativeTab": {
+      "value": "CUSTOM:LeDinoMod"
+    },
+    "stackSize": 1,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": true,
+    "usageCount": 100,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 4.0,
+    "bulletPower": 10.0,
+    "bulletDamage": 7.0,
+    "bulletKnockback": 10,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Blocks.STONE#0"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": ""
+  }
+}

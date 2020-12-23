@@ -7,7 +7,7 @@
     "customModelName": "Normal",
     "name": "Wrench",
     "creativeTab": {
-      "value": "TOOLS"
+      "value": "CUSTOM:LeDinoMod"
     },
     "toolType": "Special",
     "harvestLevel": 0,

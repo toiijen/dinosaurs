@@ -6,7 +6,6 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -15,6 +14,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.block.BlockState;
 
 import net.mcreator.dinosaurworld.procedures.MobblowerMobIsHitWithToolProcedure;
+import net.mcreator.dinosaurworld.itemgroup.LeDinoModItemGroup;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import com.google.common.collect.Multimap;
@@ -48,7 +48,7 @@ public class MobblowerItem extends DinosaurworldElements.ModElement {
 	}
 	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
-			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(350));
+			super(new Item.Properties().group(LeDinoModItemGroup.tab).maxDamage(350));
 		}
 
 		@Override

@@ -7,7 +7,7 @@ import net.mcreator.dinosaurworld.DinosaurworldElements;
 @DinosaurworldElements.ModElement.Tag
 public class MobblowerMobIsHitWithToolProcedure extends DinosaurworldElements.ModElement {
 	public MobblowerMobIsHitWithToolProcedure(DinosaurworldElements instance) {
-		super(instance, 38);
+		super(instance, 45);
 	}
 
 	public static void executeProcedure(java.util.HashMap<String, Object> dependencies) {

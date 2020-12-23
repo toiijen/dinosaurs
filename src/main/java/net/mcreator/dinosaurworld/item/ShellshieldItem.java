@@ -6,7 +6,6 @@ import net.minecraftforge.registries.ObjectHolder;
 import net.minecraft.world.World;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.item.ItemStack;
-import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Item;
 import net.minecraft.inventory.EquipmentSlotType;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
@@ -18,6 +17,7 @@ import net.minecraft.block.BlockState;
 import net.mcreator.dinosaurworld.procedures.ShellshieldToolInInventoryTickProcedure;
 import net.mcreator.dinosaurworld.procedures.ShellshieldToolInHandTickProcedure;
 import net.mcreator.dinosaurworld.procedures.ShellshieldOnPlayerStoppedUsingProcedure;
+import net.mcreator.dinosaurworld.itemgroup.LeDinoModItemGroup;
 import net.mcreator.dinosaurworld.DinosaurworldElements;
 
 import com.google.common.collect.Multimap;
@@ -67,7 +67,7 @@ public class ShellshieldItem extends DinosaurworldElements.ModElement {
 	}
 	private static class ItemToolCustom extends Item {
 		protected ItemToolCustom() {
-			super(new Item.Properties().group(ItemGroup.TOOLS).maxDamage(1000));
+			super(new Item.Properties().group(LeDinoModItemGroup.tab).maxDamage(1000));
 		}
 
 		@Override
