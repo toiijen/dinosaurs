@@ -678,11 +678,11 @@
   "language_map": {
     "en_us": {
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
-      "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "entity.dinosaurworld.ankylosaurus": "Ankylosaurus",
+      "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "item.dinosaurworld.mesozoic": "Mesozoic Portal Igniter",
-      "advancements.fossilgathering.title": "Archeologist",
       "advancements.welcometothenewworld.title": "Welcome to the new world, Jurrasic world",
+      "advancements.fossilgathering.title": "Archeologist",
       "item.dinosaurworld.arrowstaff": "Automated crossbow",
       "block.dinosaurworld.elektrickyplot": "Elektrickyplot",
       "item.dinosaurworld.anky": "Anky",
