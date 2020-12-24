@@ -710,6 +710,142 @@
       "compiles": true,
       "locked_code": false,
       "ids": {}
+    },
+    {
+      "name": "OiliguessMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Oiliguess",
+      "type": "fluid",
+      "sortid": 65,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "GunBarrel",
+      "type": "item",
+      "sortid": 66,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "GunBarrelRecipe",
+      "type": "recipe",
+      "sortid": 67,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BasicGunParts",
+      "type": "item",
+      "sortid": 68,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "BasicGunPartsRecipe",
+      "type": "recipe",
+      "sortid": 69,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MediumGradeGunParts",
+      "type": "item",
+      "sortid": 70,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MaediumGunPartsRecipe",
+      "type": "recipe",
+      "sortid": 71,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvancedGunParts",
+      "type": "item",
+      "sortid": 72,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "AdvGunParts",
+      "type": "recipe",
+      "sortid": 73,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PlasticShite",
+      "type": "item",
+      "sortid": 74,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "OilRecipe",
+      "type": "recipe",
+      "sortid": 75,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "PlasticRecipe",
+      "type": "recipe",
+      "sortid": 76,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SynthStock",
+      "type": "item",
+      "sortid": 77,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "SynthStockRecipe",
+      "type": "recipe",
+      "sortid": 78,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Spas12Recipe",
+      "type": "recipe",
+      "sortid": 79,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
     }
   ],
   "variable_elements": [],
@@ -776,7 +912,10 @@
       "advancements.timetraveller.title": "Timetraveller",
       "item.dinosaurworld.pterodaktyl": "Pterodaktyl Spawn Egg",
       "block.dinosaurworld.elektrickyplotvrch": "electric fence top",
+      "item.dinosaurworld.plasticshite": "Plastic Shite",
+      "item.dinosaurworld.oiliguess_bucket": "Oiliguess Bucket",
       "item.dinosaurworld.berserkjuice": "Brewed cycad bits",
+      "item.dinosaurworld.gunbarrel": "Gun Barrel",
       "itemGroup.tabledinomod": "Le Dino Mod",
       "effect.brewedcycadbits": "Brewed Cycad Bits",
       "item.dinosaurworld.brachiosaurus": "Brachiosaurus Spawn Egg",
@@ -785,18 +924,22 @@
       "entity.dinosaurworld.brachiosaurus": "Brachiosaurus",
       "item.dinosaurworld.ancientteleporter": "Ancient Teleporter(Never use in hell)",
       "biome.dinosaurworld.cycadbiom": "Cycadbiom",
+      "item.dinosaurworld.synthstock": "Synth Stock",
       "advancements.enemyofshelledcreatures.descr": "not gonna tell you",
       "advancements.fossilgathering.title": "Archeologist",
       "item.minecraft.lingering_potion.effect.brewedcycadbits": "Lingering Brewed Cycad Bits",
       "item.dinosaurworld.arrowstaff": "Automated crossbow",
+      "fluid.oiliguess": "Oiliguess",
       "advancements.arrowstaffadvanc.descr": "use automated crossbow",
       "item.minecraft.splash_potion.effect.brewedcycadbits": "Splash Brewed Cycad Bits",
       "item.dinosaurworld.mobblower": "Mobblower",
       "advancements.fossilgathering.descr": "gain fossil",
       "item.dinosaurworld.ankylosaurus": "Ankylosaurus Spawn Egg",
+      "item.dinosaurworld.advancedgunparts": "Advanced Gun Parts",
       "item.dinosaurworld.newteleporter": "New teleporter(never use in end)",
       "item.dinosaurworld.jurassicworld": "Jurassicworld Portal Igniter",
       "item.dinosaurworld.shellshielddontuse": "Shellshield",
+      "item.dinosaurworld.mediumgradegunparts": "Medium Grade Gun Parts",
       "advancements.timetraveller.descr": "travel to mesozoic",
       "item.dinosaurworld.tpstaff": "Teleportation staff",
       "item.minecraft.potion.effect.brewedcycadbits": "Brewed Cycad Bits",
@@ -807,6 +950,7 @@
       "block.dinosaurworld.cycadsapling": "Cycadsapling",
       "item.dinosaurworld.shellshield": "Shellshield",
       "advancements.arrowstaffadvanc.title": "Not gonna use that slow crossbow again",
+      "item.dinosaurworld.basicgunparts": "Basic Gun Parts",
       "item.dinosaurworld.franchispas12": "Franchi SPAS12",
       "block.dinosaurworld.fossil": "Fossil"
     }

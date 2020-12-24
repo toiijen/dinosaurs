@@ -1,0 +1,32 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345"
+  ],
+  "key": {
+    "0": {
+      "item": "dinosaurworld:gunbarrel"
+    },
+    "1": {
+      "item": "dinosaurworld:advancedgunparts"
+    },
+    "2": {
+      "item": "dinosaurworld:basicgunparts"
+    },
+    "3": {
+      "item": "dinosaurworld:gunbarrel"
+    },
+    "4": {
+      "item": "dinosaurworld:plasticshite"
+    },
+    "5": {
+      "item": "dinosaurworld:synthstock"
+    }
+  },
+  "result": {
+    "item": "dinosaurworld:franchispas12",
+    "count": 1
+  }
+}

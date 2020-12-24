@@ -1,0 +1,22 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:string"
+    },
+    {
+      "item": "dinosaurworld:mediumgradegunparts"
+    }
+  ],
+  "result": {
+    "item": "dinosaurworld:advancedgunparts",
+    "count": 1
+  }
+}

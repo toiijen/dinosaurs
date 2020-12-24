@@ -1,0 +1,11 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:smelting",
+  "experience": 1,
+  "ingredient": {
+    "item": "dinosaurworld:oiliguess"
+  },
+  "result": {
+    "item": "dinosaurworld:plasticshite"
+  }
+}

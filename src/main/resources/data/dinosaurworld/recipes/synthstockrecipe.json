@@ -1,0 +1,27 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0 2",
+    " 4 ",
+    "  8"
+  ],
+  "key": {
+    "0": {
+      "item": "dinosaurworld:plasticshite"
+    },
+    "2": {
+      "item": "dinosaurworld:plasticshite"
+    },
+    "4": {
+      "item": "dinosaurworld:plasticshite"
+    },
+    "8": {
+      "item": "dinosaurworld:plasticshite"
+    }
+  },
+  "result": {
+    "item": "dinosaurworld:synthstock",
+    "count": 1
+  }
+}
