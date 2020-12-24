@@ -9,7 +9,7 @@
     "textureRight": "",
     "textureBack": "",
     "renderType": 2,
-    "customModelName": "plot:default",
+    "customModelName": "plotroh:default",
     "rotationMode": 2,
     "hasTransparency": true,
     "transparencyType": "SOLID",

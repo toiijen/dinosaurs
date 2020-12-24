@@ -1,0 +1,19 @@
+{
+  "group": "dinosaurworld",
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:cobblestone"
+    },
+    {
+      "item": "minecraft:paper"
+    },
+    {
+      "item": "minecraft:gunpowder"
+    }
+  ],
+  "result": {
+    "item": "dinosaurworld:shotgunbullets",
+    "count": 16
+  }
+}

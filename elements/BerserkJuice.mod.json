@@ -1,0 +1,24 @@
+{
+  "_fv": 6,
+  "_type": "food",
+  "definition": {
+    "renderType": 0,
+    "texture": "brewcycadbits_item",
+    "customModelName": "Normal",
+    "name": "Brewed cycad bits",
+    "creativeTab": {
+      "value": "CUSTOM:LeDinoMod"
+    },
+    "stackSize": 64,
+    "nutritionalValue": 4,
+    "saturation": 0.3,
+    "eatingSpeed": 32,
+    "forDogs": true,
+    "isAlwaysEdible": true,
+    "animation": "drink",
+    "hasGlow": false,
+    "onRightClicked": {
+      "name": "BrewedCycadBitsPotionStartedapplied"
+    }
+  }
+}

@@ -1,18 +1,36 @@
 
 package net.mcreator.dinosaurworld.potion;
 
+import net.minecraftforge.registries.ObjectHolder;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.event.RegistryEvent;
+
+import net.minecraft.world.World;
+import net.minecraft.util.ResourceLocation;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.EffectType;
+import net.minecraft.potion.EffectInstance;
+import net.minecraft.potion.Effect;
+import net.minecraft.item.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraft.entity.ai.attributes.AbstractAttributeMap;
+import net.minecraft.entity.LivingEntity;
+
+import net.mcreator.dinosaurworld.procedures.BrewedCycadBitsPotionStartedappliedProcedure;
+import net.mcreator.dinosaurworld.DinosaurworldElements;
+
+import java.util.List;
+import java.util.ArrayList;
+
 @DinosaurworldElements.ModElement.Tag
 public class BrewedCycadBitsPotion extends DinosaurworldElements.ModElement {
-
 	@ObjectHolder("dinosaurworld:brewedcycadbits")
 	public static final Effect potion = null;
-
 	@ObjectHolder("dinosaurworld:brewedcycadbits")
 	public static final Potion potionType = null;
-
 	public BrewedCycadBitsPotion(DinosaurworldElements instance) {
 		super(instance, 58);
-
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
@@ -25,22 +43,17 @@ public class BrewedCycadBitsPotion extends DinosaurworldElements.ModElement {
 	public void registerPotion(RegistryEvent.Register<Potion> event) {
 		event.getRegistry().register(new PotionCustom());
 	}
-
 	public static class PotionCustom extends Potion {
-
 		public PotionCustom() {
 			super(new EffectInstance(potion, 3600));
 			setRegistryName("brewedcycadbits");
 		}
-
 	}
 
 	public static class EffectCustom extends Effect {
-
 		private final ResourceLocation potionIcon;
-
 		public EffectCustom() {
-			super(EffectType.BENEFICIAL, -6684775);
+			super(EffectType.HARMFUL, -6684775);
 			setRegistryName("brewedcycadbits");
 			potionIcon = new ResourceLocation("dinosaurworld:textures/brewed_cycad_stuff.png");
 		}
@@ -86,7 +99,6 @@ public class BrewedCycadBitsPotion extends DinosaurworldElements.ModElement {
 			{
 				java.util.HashMap<String, Object> $_dependencies = new java.util.HashMap<>();
 				$_dependencies.put("entity", entity);
-
 				BrewedCycadBitsPotionStartedappliedProcedure.executeProcedure($_dependencies);
 			}
 		}
@@ -95,7 +107,5 @@ public class BrewedCycadBitsPotion extends DinosaurworldElements.ModElement {
 		public boolean isReady(int duration, int amplifier) {
 			return true;
 		}
-
 	}
-
 }

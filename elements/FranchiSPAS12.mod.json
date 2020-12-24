@@ -11,10 +11,10 @@
     },
     "stackSize": 1,
     "ammoItem": {
-      "value": ""
+      "value": "CUSTOM:ShotgunBullets"
     },
     "shootConstantly": true,
-    "usageCount": 100,
+    "usageCount": 8,
     "actionSound": {
       "value": "entity.arrow.shoot"
     },

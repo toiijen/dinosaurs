@@ -10,7 +10,7 @@
       "falpha": 0.0
     },
     "isInstant": false,
-    "isBad": false,
+    "isBad": true,
     "isBenefitical": true,
     "registerPotionType": true,
     "curativeItems": [

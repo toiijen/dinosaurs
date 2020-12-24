@@ -4,7 +4,7 @@
   "definition": {
     "mobName": "Pterodaktyl",
     "mobLabel": "",
-    "mobModelTexture": "pterotexture.png",
+    "mobModelTexture": "ptero1texture.png",
     "mobModelName": "Modelpterodaktyl",
     "modelWidth": 0.6,
     "modelHeight": 1.8,
