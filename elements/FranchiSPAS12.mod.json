@@ -2,9 +2,9 @@
   "_fv": 6,
   "_type": "gun",
   "definition": {
-    "renderType": 0,
+    "renderType": 1,
     "texture": "spas12item",
-    "customModelName": "Normal",
+    "customModelName": "franchi_spas12lowwip:default",
     "name": "Franchi SPAS12",
     "creativeTab": {
       "value": "CUSTOM:LeDinoMod"
